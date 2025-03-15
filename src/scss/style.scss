@@ -1,17 +1,20 @@
-$bgColor: #24292e;
-$text: #fff;
+// fonts
+// @import '../fonts/stylesheet.css';
 
-@font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
+// global
+@import 'global/normalize'; // normalize v.8.0.1
+@import 'global/my-reset'; // my custom styles
 
-body {
-  padding: 1rem;
-  margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
-}
+// blocks
+@import 'blocks/contact';
+@import 'blocks/header';
+@import 'blocks/page-container';
+@import 'blocks/repair';
+
+
+// components
+@import 'components/buttons';
+@import 'components/decor';
+@import 'components/icons';
+@import 'components/logo';
+

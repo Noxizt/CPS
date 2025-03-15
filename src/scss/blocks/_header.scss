@@ -1,0 +1,21 @@
+.header {
+  height: 88px;
+  padding: 0 16px;
+  margin-bottom: 24px;
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+  // position: relative;
+  background-color: #ffffff;
+  border-bottom: 1px solid #d9fff5;
+
+  @media (min-width: 768px) {
+    padding: 0 24px;
+    height: 88px;
+  }
+
+  @media (min-width: 1120px) {
+    display: none;
+  }
+}
+

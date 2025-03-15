@@ -1,0 +1,25 @@
+.btn-round {
+  border: transparent;
+  background-color: transparent;
+}
+
+
+
+.button-expand {
+  height: 24px;
+  padding: 0 0 0 16px;
+  border: transparent;
+  background-color: transparent;
+  /* text style */
+  font-family: "TTLakes-Medium";
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  display: flex;
+  gap: 8px;
+}
+
+.button-expand:hover {
+  background-color: lightseagreen;
+}

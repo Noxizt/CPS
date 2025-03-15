@@ -1,0 +1,13 @@
+.logo-CPS {
+  background-image: url("../img/logo-CPS.svg");
+  width: 98px;
+  height: 52px;
+  flex-shrink: 0;
+  margin: 0 auto 0 16.73px;
+
+  &:hover {
+    outline: 1px solid lightpink;
+    background-color: #F8F8F8;
+  }
+}
+

@@ -1,0 +1,21 @@
+.divider {
+  width: 2px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 1px;
+  background: #eaeaea;
+  margin: 0 20px 0 0;
+}
+
+.divider--hidden {
+  width: 2px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 1px;
+  background: #eaeaea;
+  margin: 0 4px 0 20px;
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+

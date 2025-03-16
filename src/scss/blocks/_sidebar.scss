@@ -1,0 +1,28 @@
+.sidebar {
+  // display:none;
+  // visibility: hidden;
+  // visibility: visible;
+  width: 320px;
+  height: 100%;
+  min-height: 770px; /* предотвращает наложение footer на menu*/
+  // margin-bottom: 2px;
+  position: absolute;
+  // top: 0;
+  left: -300px;
+  z-index: 10;
+  background: #fff;
+  // box-shadow: -2px 0px 4px 0px rgba(69, 79, 126, 0.02), 16px 0px 52px 0px rgba(14, 24, 80, 0.20);
+
+  // box-shadow: 5px 0 30px 0 #1b1c215f;
+
+  @media (min-width: 0px) and (max-width: 767px) {
+  }
+  @media (min-width: 767px) and (max-width: 1439px) {
+  }
+
+  @media (min-width: 1440px) {
+    box-shadow: none;
+    // visibility: visible;
+    left: 0;
+  }
+}

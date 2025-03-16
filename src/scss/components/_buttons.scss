@@ -1,25 +1,116 @@
 .btn-round {
   border: transparent;
   background-color: transparent;
+  width: 40px;
+    height: 40px;
+    border: transparent;
+    background-color: transparent;
+    transition: 1s;
+    &:hover {
+      scale: 1.1; /* transform: scale(110%); */
+      opacity: 0.5;
+  }
 }
 
+.btn-lang {
+  color: #1b1c21;
+  font-family: 'TT Lakes';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.2px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  &:focus {
+    color: #7E7E82;
+  }
+}
 
-
-.button-expand {
+.btn-readmore {
   height: 24px;
   padding: 0 0 0 16px;
   border: transparent;
   background-color: transparent;
   /* text style */
-  font-family: "TTLakes-Medium";
+  font-family: 'TTLakes-Medium';
   font-size: 16px;
   font-style: normal;
   line-height: 24px;
   letter-spacing: -0.2px;
   display: flex;
   gap: 8px;
+  &:hover {
+    background-color: lightseagreen;
+  }
+  @media (min-width: 768px) {
+    padding-left: 25px;
+  }
+  @media (min-width: 1120px) {
+    padding-left: 33px;
+  }
 }
 
-.button-expand:hover {
-  background-color: lightseagreen;
+.button-expand {
+  height: 24px;
+  margin-left: 24px;
+  border: transparent;
+  background-color: transparent;
+  display: flex;
+  gap: 8px;
+  color: #1b1c21;
+  font-family: 'TT Lakes';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  transition: 1s;
+  &:hover {
+    opacity: 0.5; /* transform: scale(125%); */
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    display: none;
+  }
+  @media (min-width: 768px) and (max-width: 1119px) {
+    margin-left: 32px;
+  }
+}
+
+.btn-conditions {
+  display: block;
+  position: relative;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  transition: all 0.4s;
+  max-width: 192px;
+  filter: drop-shadow(1px 1px 3px #b5b6bc);
+  @media (min-width: 768px) {
+    font-size: 16px;
+    max-width: 316px;
+  }
+  &:hover {
+    color: #7e7e82;
+  }
+  &:active {
+    color: #7e7e82;
+  }
+  &__arrow-image {
+    display: block;
+    width: 24px;
+    height: 27.49px;
+    background-image: url('../img/arrow_more.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    left: 100px;
+    bottom: -3px;
+    @media (min-width: 768px) {
+      left: 289px;
+      bottom: -2px;
+    }
+  }
 }

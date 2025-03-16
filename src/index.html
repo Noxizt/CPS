@@ -9,102 +9,292 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title><%= htmlWebpackPlugin.options.title %></title>
     <!-- <title>CPS Серсвисный Центр</title> -->
-    <link rel="shortcut icon" href="res/logo-CPS.svg" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/logo-CPS.svg" type="image/x-icon" />
   </head>
 
   <body class="page-container">
-    <header class="header">
-      <button class="btn-round ic-burger" alt="Меню"></button>
-      <span class="divider--hidden"></span>
-      <a class="logo-CPS" href="#"></a>
-      <div class="contact">
-        <button class="btn-round ic-call" alt="Позвонить"></button>
-        <button class="btn-round ic-chat" alt="Написать"></button>
-        <button class="btn-round ic-profile" alt="Профиль"></button>
-      </div>
-      <span class="divider"></span>
-      <div class="repair">
-        <button class="btn-round ic-repair" alt="Оставить заявку"></button>
-        <button class="btn-round ic-checkstatus" alt="Статус ремонта"></button>
-      </div>
-    </header>
-    <main>
-      <!-- ------------------------------------------- TITLE & REPAIR -->
-      <div class="title-and-repair-wrap">
-        <div class="title-block">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="4"
-            height="40"
-            viewBox="0 0 4 40"
-            fill="none"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M4 4C4 1.79086 2.20914 0 0 0V40C2.20914 40 4 38.2091 4 36V4Z"
-              fill="#41F6D7"
-            />
-          </svg>
-          <h1 class="title-block__text">Услуги и сервисы</h1>
-        </div>
 
-        <div class="repair-block">
-          <a href="#" class="link-repair-block">
-            <span class="">Оставить заявку</span>
-            <div class="ic-repair"></div>
-          </a>
-          <a href="#" class="link-repair-block">
-            <span class="">Статус ремонта</span>
-            <div class="ic-checkstatus"></div>
+
+    <aside class="sidebar">
+      <div class="sidebar-header side-bar--mg">
+        <button class="btn-round ic-cross" title="Закрыть"></button>
+        <a class="sidebar-logo" href="#"><img src="img/logo-CPS.svg" /></a>
+        <button class="btn-round ic-search" title="Поиск"></button>
+      </div>
+      <nav>
+        <ul class="sidebar-menu">
+          <li><a class="sidebar-menu__link" href="#">Ремонт техники</a></li>
+          <li><a class="sidebar-menu__link" href="#">Услуги и сервисы</a></li>
+          <li
+            ><a class="sidebar-menu__link" href="#"
+              >Корпоративным клиентам</a
+            ></li
+          >
+          <li
+            ><a class="sidebar-menu__link" href="#">Продавцам техники</a></li
+          >
+          <li><a class="sidebar-menu__link" href="#">Партнерам</a></li>
+          <li><a class="sidebar-menu__link" href="#">Производителям</a></li>
+          <li
+            ><a class="sidebar-menu__link" href="#"
+              >Наши сервисные центры</a
+            ></li
+          >
+          <li><a class="sidebar-menu__link" href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <footer class="sidebar-footer">
+        <div class="sidebar-footer__buttons">
+          <button class="btn-round ic-call" title="Позвонить"></button>
+          <button class="btn-round ic-chat" title="Написать"></button>
+          <button class="btn-round ic-profile" title="Профиль"></button>
+        </div>
+        <a class="sidebar-footer__mail" href="mailto:mail@cps.com"
+          >mail@cps.com</a
+        >
+        <a class="sidebar-footer__tel" href="tel:88008908900"
+          >8 800 890 8900</a
+        >
+        <div class="sidebar-footer__lang">
+          <button class="btn-lang" title="Переключить на русский язык"
+            >RU</button
+          >
+          <button class="btn-lang" title="Переключить на английский язык"
+            >EN</button
+          >
+          <button class="btn-lang" title="Переключить на китайский язык"
+            >CH</button
+          >
+        </div>
+      </footer>
+    </aside>
+
+
+    <div class="content-container">
+      <header class="header">
+        <button class="btn-round ic-burger" alt="Меню"></button>
+        <span class="dec-divider--hidden"></span>
+        <a class="logo-CPS" href="#"></a>
+        <div class="header__contact">
+          <button class="btn-round ic-call" alt="Позвонить"></button>
+          <button class="btn-round ic-chat" alt="Написать"></button>
+          <button class="btn-round ic-profile" alt="Профиль"></button>
+        </div>
+        <span class="dec-divider"></span>
+        <div class="header__repair">
+          <button class="btn-round ic-repair" alt="Оставить заявку"></button>
+          <button
+            class="btn-round ic-checkstatus"
+            alt="Статус ремонта"
+          ></button>
+        </div>
+      </header>
+
+      
+
+      <main>
+        <!-- ------------------------------------------- TITLE & REPAIR -->
+        <div class="title">
+          <div class="dec-highlight"></div>
+          <h1 class="title-text">Услуги и сервисы</h1>
+
+          <div class="title-repair">
+            <a href="#" class="title-repair__link"
+              >Оставить заявку
+              <div class="ic-repair"></div>
+            </a>
+            <a href="#" class="title-repair__link"
+              >Статус ремонта
+              <div class="ic-checkstatus"></div>
+            </a>
+          </div>
+        </div>
+        <!-- ------------------------------------------- SLIDE MENU -->
+        <ul class="slide-menu">
+          <li class="slide-menu__item"
+            ><a href="#" class="slide-menu__link">Ремонтируемые бренды</a></li
+          >
+          <li class="slide-menu__item"
+            ><a href="#" class="slide-menu__link"
+              >Ремонтируемые устройства</a
+            ></li
+          >
+          <li class="slide-menu__item"
+            ><a href="#" class="slide-menu__link">Цены на услуги</a></li
+          >
+          <li class="slide-menu__item"
+            ><a href="#" class="slide-menu__link"
+              >Адреса сервисных центров</a
+            ></li
+          >
+          <li class="slide-menu__item"
+            ><a href="#" class="slide-menu__link">Специальные цены</a></li
+          >
+          <li class="slide-menu__item"
+            ><a href="#" class="slide-menu__link">Отзывы</a></li
+          >
+        </ul>
+        <!-- ------------------------------------------- CONTENT -->
+        <section class="content">
+          <article class="content-wrapper">
+            <p class="content__text">
+              Мы являемся авторизованным сервисным центром по ремонту техники
+              Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+              официальной гарантией производителя.
+              <br />
+              <br />
+              Мы успешно работаем с 1992 года и заслужили репутацию надежного
+              партнера, что подтверждает большое количество постоянных клиентов.
+              Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+              очередь, советуют нас родным и близким.
+            </p>
+            <button class="btn-readmore">
+              <div class="ic-expand"></div><span>Читать далее</span>
+            </button>
+          </article>
+          <picture class="content__image">
+            <source media="(min-width:1120px)" srcset="img/1120.png" />
+            <source media="(min-width:768px)" srcset="img/768.png" />
+            <img src="img/320.png" alt="Вывеска CPS" style="width: auto" />
+          </picture>
+        </section>
+        <section class="slider">
+          <header class="slider-header">
+            <h2 class="slider-header__name"
+              >Ремонт техники различных брендов</h2
+            >
+          </header>
+          <div class="swiper swiper-custom">
+            <ul class="swiper-wrapper swiper-wrapper-custom">
+              <li class="swiper-slide swiper-slide-custom">
+                <div class="swiper-slide__brand-card">
+                  <img src="img/brands/lenovo.png" alt="логотип Lenovo" />
+                  <a href="#Lenovo">
+                    <img src="img/go.svg" title="Подробнее о бренде Lenovo" />
+                  </a>
+                </div>
+              </li>
+              <li class="swiper-slide swiper-slide-custom">
+                <div class="swiper-slide__brand-card">
+                  <img src="img/brands/samsung.png" alt="логотип Samsung" />
+                  <a href="#Samsung">
+                    <img src="img/go.svg" title="Подробнее о бренде Samsung" />
+                  </a>
+                </div>
+              </li>
+              <li class="swiper-slide swiper-slide-custom">
+                <div class="swiper-slide__brand-card">
+                  <img src="img/brands/apple.png" alt="логотип Apple" />
+                  <a href="#Apple">
+                    <img src="img/go.svg" title="Подробнее о бренде Apple" />
+                  </a>
+                </div>
+              </li>
+              <li class="swiper-slide swiper-slide-custom">
+                <div class="swiper-slide__brand-card">
+                  <img src="img/brands/viewsonic.png" alt="логотип ViewSonic" />
+                  <a href="#ViewSonic">
+                    <img
+                      src="img/go.svg"
+                      title="Подробнее о бренде ViewSonic"
+                    />
+                  </a>
+                </div>
+              </li>
+              <li class="swiper-slide swiper-slide-custom">
+                <div class="swiper-slide__brand-card">
+                  <img src="img/brands/bosch.png" alt="логотип Bosch" />
+                  <a href="#Bosch">
+                    <img src="img/go.svg" title="Подробнее о бренде Bosch" />
+                  </a>
+                </div>
+              </li>
+              <li class="swiper-slide swiper-slide-custom">
+                <div class="swiper-slide__brand-card">
+                  <img src="img/brands/hp.png" alt="логотип HP" />
+                  <a href="#HP">
+                    <img src="img/go.svg" title="Подробнее о бренде HP" />
+                  </a>
+                </div>
+              </li>
+              <li class="swiper-slide swiper-slide-custom">
+                <div class="swiper-slide__brand-card">
+                  <img src="img/brands/acer.png" alt="логотип Acer" />
+                  <a href="#Acer">
+                    <img src="img/go.svg" title="Подробнее о бренде Acer" />
+                  </a>
+                </div>
+              </li>
+              <li class="swiper-slide swiper-slide-custom">
+                <div class="swiper-slide__brand-card">
+                  <img src="img/brands/sony.png" alt="логотип SONY" />
+                  <a href="#SONY">
+                    <img src="img/go.svg" title="Подробнее о бренде SONY" />
+                  </a>
+                </div>
+              </li>
+              <li class="swiper-slide swiper-slide-custom">
+                <div class="swiper-slide__brand-card">
+                  <img src="img/brands/lenovo.png" alt="логотип Lenovo" />
+                  <a href="#Lenovo">
+                    <img src="img/go.svg" title="Подробнее о бренде Lenovo" />
+                  </a>
+                </div>
+              </li>
+              <li class="swiper-slide swiper-slide-custom">
+                <div class="swiper-slide__brand-card">
+                  <img src="img/brands/samsung.png" alt="логотип Samsung" />
+                  <a href="#Samsung">
+                    <img src="img/go.svg" title="Подробнее о бренде Samsung" />
+                  </a>
+                </div>
+              </li>
+              <li class="swiper-slide swiper-slide-custom">
+                <div class="swiper-slide__brand-card">
+                  <img src="img/brands/apple.png" alt="логотип Apple" />
+                  <a href="#Apple">
+                    <img src="img/go.svg" title="Подробнее о бренде Apple" />
+                  </a>
+                </div>
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+          </div>
+          <button class="button-expand">
+            <div class="ic-expand"></div
+            ><span class="button-expand_inner">Показать все</span>
+          </button>
+        </section>
+
+        <div class="conditions container">
+          <p class="conditions__text conditions__text--mg">
+            Все цены указаны с учетом НДС. Стоимость ремонта указана на
+            единичную услугу. Для получения коммерческого предложения на
+            постоянное обслуживание, оставьте заявку.
+          </p>
+          <a href="#commercial-offer" class="btn-conditions">
+            Получить коммерческое предложение
+            <span class="btn-conditions__arrow-image"></span>
           </a>
         </div>
-      </div>
-      <!-- ------------------------------------------- SLIDE MENU -->
-      <ul class="slide-menu">
-        <li class="slide-menu__ele"
-          ><a href="#" class="slide-menu__link">Ремонтируемые бренды</a></li
+      </main>
+
+      <footer class="footer">
+        <div class="footer-company-info">
+          <p class="footer-company-info__year">© 2019 CPS</p>
+          <p class="footer-company-info__text footer-company-info__text--mg"
+            >Разработано командой Apesong</p
+          >
+        </div>
+        <a href="#0" class="footer__privacy-policy footer__privacy-policy--mg"
+          >Политика конфиденциальности</a
         >
-        <li class="slide-menu__ele"
-          ><a href="#" class="slide-menu__link">Ремонтируемые устройства</a></li
+        <p class="footer__privacy-policy-text footer__privacy-policy-text--mg"
+          >Информация, размещенная на данной странице, не является публичной
+          офертой</p
         >
-        <li class="slide-menu__ele"
-          ><a href="#" class="slide-menu__link">Цены на услуги</a></li
-        >
-        <li class="slide-menu__ele"
-          ><a href="#" class="slide-menu__link">Адреса сервисных центров</a></li
-        >
-        <li class="slide-menu__ele"
-          ><a href="#" class="slide-menu__link">Специальные цены</a></li
-        >
-        <li class="slide-menu__ele"
-          ><a href="#" class="slide-menu__link">Отзывы</a></li
-        >
-      </ul>
-      <!-- ------------------------------------------- CONTENT -->
-      <section class="about">
-        <article class="about__description">
-          <p class="about__text">
-            Мы являемся авторизованным сервисным центром по ремонту техники
-            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
-            официальной гарантией производителя.
-            <br />
-            <br />
-            Мы успешно работаем с 1992 года и заслужили репутацию надежного
-            партнера, что подтверждает большое количество постоянных клиентов.
-            Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
-            очередь, советуют нас родным и близким.
-          </p>
-          <button class="button-expand">
-            <div class="ic-expand"></div><span>Читать далее</span>
-          </button>
-        </article>
-        <picture class="about__pic">
-          <source media="(min-width:1120px)" srcset="res/1120.png" />
-          <source media="(min-width:768px)" srcset="res/768.png" />
-          <img src="res/320.png" alt="Вывеска CPS" style="width: auto" />
-        </picture>
-      </section>
-    </main>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>

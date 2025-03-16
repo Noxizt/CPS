@@ -1,15 +1,26 @@
 // fonts
-// @import '../fonts/stylesheet.css';
-
+@import '../fonts/stylesheet.css';
+// SwiperJS minimal default
+@import url(https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css); 
 // global
 @import 'global/normalize'; // normalize v.8.0.1
 @import 'global/my-reset'; // my custom styles
-
+@import 'global/global'; // global settings
 // blocks
-@import 'blocks/contact';
+@import 'blocks/conditions';
+@import 'blocks/content-container';
+@import 'blocks/content';
+@import 'blocks/footer';
 @import 'blocks/header';
 @import 'blocks/page-container';
-@import 'blocks/repair';
+@import 'blocks/sidebar-footer';
+@import 'blocks/sidebar-header';
+@import 'blocks/sidebar-menu';
+@import 'blocks/sidebar';
+@import 'blocks/slide-menu';
+@import 'blocks/slider';
+@import 'blocks/title';
+
 
 
 // components

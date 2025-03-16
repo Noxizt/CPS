@@ -1,0 +1,58 @@
+.sidebar-footer {
+  padding: 0 0 32px 24px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  &__buttons {
+    margin-bottom: 16px;
+    display: flex;
+    gap: 16px;
+  }
+  &__mail {
+    margin-bottom: 12px;
+    color: #1b1c21;
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+    text-decoration: none;
+    transition: 1s;
+    &:hover {
+      transition: 1s;
+      font-size: 2em;
+      color: #ff3e79;
+    }
+  }
+  &__tel {
+    margin-bottom: 40px;
+    color: #1b1c21;
+    font-family: 'TT Lakes';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
+    letter-spacing: -0.6px;
+    text-decoration: none;
+    transition: 1s;
+    &:hover {
+      transition: 1s;
+      font-size: 2em;
+      color: #ff3e79;
+    }
+  }
+  &__lang {
+    height: 24px;
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+    transition: 1s;
+    &:hover {
+      transition: 1s;
+      font-size: 2em;
+      color: #ff3e79;
+    }
+  }
+}

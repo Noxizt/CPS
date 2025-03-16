@@ -1,4 +1,4 @@
-.divider {
+.dec-divider {
   width: 2px;
   height: 32px;
   flex-shrink: 0;
@@ -7,7 +7,7 @@
   margin: 0 20px 0 0;
 }
 
-.divider--hidden {
+.dec-divider--hidden {
   width: 2px;
   height: 32px;
   flex-shrink: 0;
@@ -19,3 +19,16 @@
   }
 }
 
+.dec-highlight {
+  width: 4px;
+  height: 40px;
+  background-image: url('../img/highlight.svg');
+  margin-right: 12px;  
+  @media (min-width: 768px) {
+    margin-right: 20px;
+  }
+  @media (min-width: 1120px) {
+    background-image: url('../img/highlight-rounded.svg');
+    margin-right: 30px;
+  }
+}

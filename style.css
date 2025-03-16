@@ -1,15 +1,1794 @@
+@import url(https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css);
 @font-face {
-  font-family: 'Comic';
-  src: url(./fonts/comic.ttf) format("truetype");
-  font-weight: normal;
-  font-style: italic; }
+    font-family: 'TT Lakes';
+    src: url(./fonts/TTLakes-Italic.eot);
+    src: local('TT Lakes Italic'), local('TTLakes-Italic'),
+        url(./fonts/TTLakes-Italic.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakes-Italic.woff) format('woff'),
+        url(./fonts/TTLakes-Italic.ttf) format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url(./fonts/TTLakesCondensed-ExtraLight.eot);
+    src: local('TT Lakes Condensed ExtraLight'), local('TTLakesCondensed-ExtraLight'),
+        url(./fonts/TTLakesCondensed-ExtraLight.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakesCondensed-ExtraLight.woff) format('woff'),
+        url(./fonts/TTLakesCondensed-ExtraLight.ttf) format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url(./fonts/TTLakesCompressed-Regular.eot);
+    src: local('TT Lakes Compressed Regular'), local('TTLakesCompressed-Regular'),
+        url(./fonts/TTLakesCompressed-Regular.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakesCompressed-Regular.woff) format('woff'),
+        url(./fonts/TTLakesCompressed-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url(./fonts/TTLakesCompressed-ThinItalic.eot);
+    src: local('TT Lakes Compressed Thin Italic'), local('TTLakesCompressed-ThinItalic'),
+        url(./fonts/TTLakesCompressed-ThinItalic.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakesCompressed-ThinItalic.woff) format('woff'),
+        url(./fonts/TTLakesCompressed-ThinItalic.ttf) format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url(./fonts/TTLakesCondensed-Medium.eot);
+    src: local('TT Lakes Condensed Medium'), local('TTLakesCondensed-Medium'),
+        url(./fonts/TTLakesCondensed-Medium.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakesCondensed-Medium.woff) format('woff'),
+        url(./fonts/TTLakesCondensed-Medium.ttf) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url(./fonts/TTLakesCompressed-ExtraBoldItalic.eot);
+    src: local('TT Lakes Compressed ExtraBold Italic'), local('TTLakesCompressed-ExtraBoldItalic'),
+        url(./fonts/TTLakesCompressed-ExtraBoldItalic.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakesCompressed-ExtraBoldItalic.woff) format('woff'),
+        url(./fonts/TTLakesCompressed-ExtraBoldItalic.ttf) format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url(./fonts/TTLakes-ExtraLightItalic.eot);
+    src: local('TT Lakes ExtraLight Italic'), local('TTLakes-ExtraLightItalic'),
+        url(./fonts/TTLakes-ExtraLightItalic.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakes-ExtraLightItalic.woff) format('woff'),
+        url(./fonts/TTLakes-ExtraLightItalic.ttf) format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url(./fonts/TTLakes-LightItalic.eot);
+    src: local('TT Lakes Light Italic'), local('TTLakes-LightItalic'),
+        url(./fonts/TTLakes-LightItalic.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakes-LightItalic.woff) format('woff'),
+        url(./fonts/TTLakes-LightItalic.ttf) format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url(./fonts/TTLakes-Thin.eot);
+    src: local('TT Lakes Thin'), local('TTLakes-Thin'),
+        url(./fonts/TTLakes-Thin.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakes-Thin.woff) format('woff'),
+        url(./fonts/TTLakes-Thin.ttf) format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url(./fonts/TTLakes-DemiBoldItalic.eot);
+    src: local('TT Lakes DemiBold Italic'), local('TTLakes-DemiBoldItalic'),
+        url(./fonts/TTLakes-DemiBoldItalic.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakes-DemiBoldItalic.woff) format('woff'),
+        url(./fonts/TTLakes-DemiBoldItalic.ttf) format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url(./fonts/TTLakesCondensed-Black.eot);
+    src: local('TT Lakes Condensed Black'), local('TTLakesCondensed-Black'),
+        url(./fonts/TTLakesCondensed-Black.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakesCondensed-Black.woff) format('woff'),
+        url(./fonts/TTLakesCondensed-Black.ttf) format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url(./fonts/TTLakesCondensed-LightItalic.eot);
+    src: local('TT Lakes Condensed Light Italic'), local('TTLakesCondensed-LightItalic'),
+        url(./fonts/TTLakesCondensed-LightItalic.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakesCondensed-LightItalic.woff) format('woff'),
+        url(./fonts/TTLakesCondensed-LightItalic.ttf) format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url(./fonts/TTLakesCondensed-DemiBold.eot);
+    src: local('TT Lakes Condensed DemiBold'), local('TTLakesCondensed-DemiBold'),
+        url(./fonts/TTLakesCondensed-DemiBold.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakesCondensed-DemiBold.woff) format('woff'),
+        url(./fonts/TTLakesCondensed-DemiBold.ttf) format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url(./fonts/TTLakesCompressed-ExtraBold.eot);
+    src: local('TT Lakes Compressed ExtraBold'), local('TTLakesCompressed-ExtraBold'),
+        url(./fonts/TTLakesCompressed-ExtraBold.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakesCompressed-ExtraBold.woff) format('woff'),
+        url(./fonts/TTLakesCompressed-ExtraBold.ttf) format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url(./fonts/TTLakes-ExtraBoldItalic.eot);
+    src: local('TT Lakes ExtraBold Italic'), local('TTLakes-ExtraBoldItalic'),
+        url(./fonts/TTLakes-ExtraBoldItalic.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakes-ExtraBoldItalic.woff) format('woff'),
+        url(./fonts/TTLakes-ExtraBoldItalic.ttf) format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url(./fonts/TTLakes-ExtraLight.eot);
+    src: local('TT Lakes ExtraLight'), local('TTLakes-ExtraLight'),
+        url(./fonts/TTLakes-ExtraLight.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakes-ExtraLight.woff) format('woff'),
+        url(./fonts/TTLakes-ExtraLight.ttf) format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url(./fonts/TTLakesCondensed-Bold.eot);
+    src: local('TT Lakes Condensed Bold'), local('TTLakesCondensed-Bold'),
+        url(./fonts/TTLakesCondensed-Bold.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakesCondensed-Bold.woff) format('woff'),
+        url(./fonts/TTLakesCondensed-Bold.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url(./fonts/TTLakesCondensed-ThinItalic.eot);
+    src: local('TT Lakes Condensed Thin Italic'), local('TTLakesCondensed-ThinItalic'),
+        url(./fonts/TTLakesCondensed-ThinItalic.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakesCondensed-ThinItalic.woff) format('woff'),
+        url(./fonts/TTLakesCondensed-ThinItalic.ttf) format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url(./fonts/TTLakesCondensed-ExtraBoldItalic.eot);
+    src: local('TT Lakes Condensed ExtraBold Italic'), local('TTLakesCondensed-ExtraBoldItalic'),
+        url(./fonts/TTLakesCondensed-ExtraBoldItalic.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakesCondensed-ExtraBoldItalic.woff) format('woff'),
+        url(./fonts/TTLakesCondensed-ExtraBoldItalic.ttf) format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url(./fonts/TTLakesCompressed-Medium.eot);
+    src: local('TT Lakes Compressed Medium'), local('TTLakesCompressed-Medium'),
+        url(./fonts/TTLakesCompressed-Medium.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakesCompressed-Medium.woff) format('woff'),
+        url(./fonts/TTLakesCompressed-Medium.ttf) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url(./fonts/TTLakesCondensed-Thin.eot);
+    src: local('TT Lakes Condensed Thin'), local('TTLakesCondensed-Thin'),
+        url(./fonts/TTLakesCondensed-Thin.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakesCondensed-Thin.woff) format('woff'),
+        url(./fonts/TTLakesCondensed-Thin.ttf) format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url(./fonts/TTLakesCompressed-Italic.eot);
+    src: local('TT Lakes Compressed Italic'), local('TTLakesCompressed-Italic'),
+        url(./fonts/TTLakesCompressed-Italic.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakesCompressed-Italic.woff) format('woff'),
+        url(./fonts/TTLakesCompressed-Italic.ttf) format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url(./fonts/TTLakesCompressed-Light.eot);
+    src: local('TT Lakes Compressed Light'), local('TTLakesCompressed-Light'),
+        url(./fonts/TTLakesCompressed-Light.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakesCompressed-Light.woff) format('woff'),
+        url(./fonts/TTLakesCompressed-Light.ttf) format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url(./fonts/TTLakesCompressed-LightItalic.eot);
+    src: local('TT Lakes Compressed Light Italic'), local('TTLakesCompressed-LightItalic'),
+        url(./fonts/TTLakesCompressed-LightItalic.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakesCompressed-LightItalic.woff) format('woff'),
+        url(./fonts/TTLakesCompressed-LightItalic.ttf) format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url(./fonts/TTLakesCondensed-Regular.eot);
+    src: local('TT Lakes Condensed Regular'), local('TTLakesCondensed-Regular'),
+        url(./fonts/TTLakesCondensed-Regular.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakesCondensed-Regular.woff) format('woff'),
+        url(./fonts/TTLakesCondensed-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url(./fonts/TTLakesCondensed-Light.eot);
+    src: local('TT Lakes Condensed Light'), local('TTLakesCondensed-Light'),
+        url(./fonts/TTLakesCondensed-Light.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakesCondensed-Light.woff) format('woff'),
+        url(./fonts/TTLakesCondensed-Light.ttf) format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url(./fonts/TTLakes-Bold.eot);
+    src: local('TT Lakes Bold'), local('TTLakes-Bold'),
+        url(./fonts/TTLakes-Bold.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakes-Bold.woff) format('woff'),
+        url(./fonts/TTLakes-Bold.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url(./fonts/TTLakes-DemiBold.eot);
+    src: local('TT Lakes DemiBold'), local('TTLakes-DemiBold'),
+        url(./fonts/TTLakes-DemiBold.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakes-DemiBold.woff) format('woff'),
+        url(./fonts/TTLakes-DemiBold.ttf) format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url(./fonts/TTLakesCompressed-Thin.eot);
+    src: local('TT Lakes Compressed Thin'), local('TTLakesCompressed-Thin'),
+        url(./fonts/TTLakesCompressed-Thin.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakesCompressed-Thin.woff) format('woff'),
+        url(./fonts/TTLakesCompressed-Thin.ttf) format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url(./fonts/TTLakes-Black.eot);
+    src: local('TT Lakes Black'), local('TTLakes-Black'),
+        url(./fonts/TTLakes-Black.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakes-Black.woff) format('woff'),
+        url(./fonts/TTLakes-Black.ttf) format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url(./fonts/TTLakes-MediumItalic.eot);
+    src: local('TT Lakes Medium Italic'), local('TTLakes-MediumItalic'),
+        url(./fonts/TTLakes-MediumItalic.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakes-MediumItalic.woff) format('woff'),
+        url(./fonts/TTLakes-MediumItalic.ttf) format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url(./fonts/TTLakesCondensed-ExtraBold.eot);
+    src: local('TT Lakes Condensed ExtraBold'), local('TTLakesCondensed-ExtraBold'),
+        url(./fonts/TTLakesCondensed-ExtraBold.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakesCondensed-ExtraBold.woff) format('woff'),
+        url(./fonts/TTLakesCondensed-ExtraBold.ttf) format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url(./fonts/TTLakesCondensed-ExtraLightItalic.eot);
+    src: local('TT Lakes Condensed ExtraLight Italic'), local('TTLakesCondensed-ExtraLightItalic'),
+        url(./fonts/TTLakesCondensed-ExtraLightItalic.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakesCondensed-ExtraLightItalic.woff) format('woff'),
+        url(./fonts/TTLakesCondensed-ExtraLightItalic.ttf) format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url(./fonts/TTLakes-Medium.eot);
+    src: local('TT Lakes Medium'), local('TTLakes-Medium'),
+        url(./fonts/TTLakes-Medium.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakes-Medium.woff) format('woff'),
+        url(./fonts/TTLakes-Medium.ttf) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url(./fonts/TTLakesCondensed-DemiBoldItalic.eot);
+    src: local('TT Lakes Condensed DemiBold Italic'), local('TTLakesCondensed-DemiBoldItalic'),
+        url(./fonts/TTLakesCondensed-DemiBoldItalic.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakesCondensed-DemiBoldItalic.woff) format('woff'),
+        url(./fonts/TTLakesCondensed-DemiBoldItalic.ttf) format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url(./fonts/TTLakesCompressed-BoldItalic.eot);
+    src: local('TT Lakes Compressed Bold Italic'), local('TTLakesCompressed-BoldItalic'),
+        url(./fonts/TTLakesCompressed-BoldItalic.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakesCompressed-BoldItalic.woff) format('woff'),
+        url(./fonts/TTLakesCompressed-BoldItalic.ttf) format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url(./fonts/TTLakesCompressed-ExtraLightItalic.eot);
+    src: local('TT Lakes Compressed ExtraLight Italic'), local('TTLakesCompressed-ExtraLightItalic'),
+        url(./fonts/TTLakesCompressed-ExtraLightItalic.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakesCompressed-ExtraLightItalic.woff) format('woff'),
+        url(./fonts/TTLakesCompressed-ExtraLightItalic.ttf) format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url(./fonts/TTLakes-Regular.eot);
+    src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+        url(./fonts/TTLakes-Regular.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakes-Regular.woff) format('woff'),
+        url(./fonts/TTLakes-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url(./fonts/TTLakes-BoldItalic.eot);
+    src: local('TT Lakes Bold Italic'), local('TTLakes-BoldItalic'),
+        url(./fonts/TTLakes-BoldItalic.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakes-BoldItalic.woff) format('woff'),
+        url(./fonts/TTLakes-BoldItalic.ttf) format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url(./fonts/TTLakesCondensed-MediumItalic.eot);
+    src: local('TT Lakes Condensed Medium Italic'), local('TTLakesCondensed-MediumItalic'),
+        url(./fonts/TTLakesCondensed-MediumItalic.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakesCondensed-MediumItalic.woff) format('woff'),
+        url(./fonts/TTLakesCondensed-MediumItalic.ttf) format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url(./fonts/TTLakesCondensed-Italic.eot);
+    src: local('TT Lakes Condensed Italic'), local('TTLakesCondensed-Italic'),
+        url(./fonts/TTLakesCondensed-Italic.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakesCondensed-Italic.woff) format('woff'),
+        url(./fonts/TTLakesCondensed-Italic.ttf) format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url(./fonts/TTLakes-ThinItalic.eot);
+    src: local('TT Lakes Thin Italic'), local('TTLakes-ThinItalic'),
+        url(./fonts/TTLakes-ThinItalic.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakes-ThinItalic.woff) format('woff'),
+        url(./fonts/TTLakes-ThinItalic.ttf) format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url(./fonts/TTLakesCompressed-DemiBold.eot);
+    src: local('TT Lakes Compressed DemiBold'), local('TTLakesCompressed-DemiBold'),
+        url(./fonts/TTLakesCompressed-DemiBold.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakesCompressed-DemiBold.woff) format('woff'),
+        url(./fonts/TTLakesCompressed-DemiBold.ttf) format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url(./fonts/TTLakes-BlackItalic.eot);
+    src: local('TT Lakes Black Italic'), local('TTLakes-BlackItalic'),
+        url(./fonts/TTLakes-BlackItalic.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakes-BlackItalic.woff) format('woff'),
+        url(./fonts/TTLakes-BlackItalic.ttf) format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url(./fonts/TTLakesCompressed-Bold.eot);
+    src: local('TT Lakes Compressed Bold'), local('TTLakesCompressed-Bold'),
+        url(./fonts/TTLakesCompressed-Bold.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakesCompressed-Bold.woff) format('woff'),
+        url(./fonts/TTLakesCompressed-Bold.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url(./fonts/TTLakesCondensed-BlackItalic.eot);
+    src: local('TT Lakes Condensed Black Italic'), local('TTLakesCondensed-BlackItalic'),
+        url(./fonts/TTLakesCondensed-BlackItalic.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakesCondensed-BlackItalic.woff) format('woff'),
+        url(./fonts/TTLakesCondensed-BlackItalic.ttf) format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url(./fonts/TTLakesCompressed-MediumItalic.eot);
+    src: local('TT Lakes Compressed Medium Italic'), local('TTLakesCompressed-MediumItalic'),
+        url(./fonts/TTLakesCompressed-MediumItalic.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakesCompressed-MediumItalic.woff) format('woff'),
+        url(./fonts/TTLakesCompressed-MediumItalic.ttf) format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url(./fonts/TTLakesCondensed-BoldItalic.eot);
+    src: local('TT Lakes Condensed Bold Italic'), local('TTLakesCondensed-BoldItalic'),
+        url(./fonts/TTLakesCondensed-BoldItalic.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakesCondensed-BoldItalic.woff) format('woff'),
+        url(./fonts/TTLakesCondensed-BoldItalic.ttf) format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url(./fonts/TTLakesCompressed-ExtraLight.eot);
+    src: local('TT Lakes Compressed ExtraLight'), local('TTLakesCompressed-ExtraLight'),
+        url(./fonts/TTLakesCompressed-ExtraLight.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakesCompressed-ExtraLight.woff) format('woff'),
+        url(./fonts/TTLakesCompressed-ExtraLight.ttf) format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url(./fonts/TTLakes-ExtraBold.eot);
+    src: local('TT Lakes ExtraBold'), local('TTLakes-ExtraBold'),
+        url(./fonts/TTLakes-ExtraBold.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakes-ExtraBold.woff) format('woff'),
+        url(./fonts/TTLakes-ExtraBold.ttf) format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url(./fonts/TTLakesCompressed-DemiBoldItalic.eot);
+    src: local('TT Lakes Compressed DemiBold Italic'), local('TTLakesCompressed-DemiBoldItalic'),
+        url(./fonts/TTLakesCompressed-DemiBoldItalic.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakesCompressed-DemiBoldItalic.woff) format('woff'),
+        url(./fonts/TTLakesCompressed-DemiBoldItalic.ttf) format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url(./fonts/TTLakesCompressed-BlackItalic.eot);
+    src: local('TT Lakes Compressed Black Italic'), local('TTLakesCompressed-BlackItalic'),
+        url(./fonts/TTLakesCompressed-BlackItalic.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakesCompressed-BlackItalic.woff) format('woff'),
+        url(./fonts/TTLakesCompressed-BlackItalic.ttf) format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url(./fonts/TTLakes-Light.eot);
+    src: local('TT Lakes Light'), local('TTLakes-Light'),
+        url(./fonts/TTLakes-Light.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakes-Light.woff) format('woff'),
+        url(./fonts/TTLakes-Light.ttf) format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url(./fonts/TTLakesCompressed-Black.eot);
+    src: local('TT Lakes Compressed Black'), local('TTLakesCompressed-Black'),
+        url(./fonts/TTLakesCompressed-Black.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/TTLakesCompressed-Black.woff) format('woff'),
+        url(./fonts/TTLakesCompressed-Black.ttf) format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+@charset "UTF-8";
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+/**
+  Нормализация блочной модели
+ */
+*,
+::before,
+::after {
+  box-sizing: border-box; }
+
+/**
+   Убираем внутренние отступы слева тегам списков,
+   у которых есть атрибут class
+  */
+:where(ul, ol):where([class]) {
+  padding-left: 0; }
+
+/**
+   Убираем внешние отступы body и двум другим тегам,
+   у которых есть атрибут class
+  */
+body,
+:where(blockquote, figure):where([class]) {
+  margin: 0; }
+
+/**
+   Убираем внешние отступы вертикали нужным тегам,
+   у которых есть атрибут class
+  */
+:where(h1, h2, h3, h4, h5, h6, p, ul, ol, dl):where([class]) {
+  margin-block: 0; }
+
+:where(dd[class]) {
+  margin-left: 0; }
+
+:where(fieldset[class]) {
+  margin-left: 0;
+  padding: 0;
+  border: none; }
+
+/**
+   Убираем стандартный маркер маркированному списку,
+   у которого есть атрибут class
+  */
+:where(ul[class]) {
+  list-style: none; }
+
+:where(address[class]) {
+  font-style: normal; }
+
+/**
+   Обнуляем вертикальные внешние отступы параграфа,
+   объявляем локальную переменную для внешнего отступа вниз,
+   чтобы избежать взаимодействие с более сложным селектором
+  */
+p {
+  --paragraphMarginBottom: 24px;
+  margin-block: 0; }
+
+/**
+   Внешний отступ вниз для параграфа без атрибута class,
+   который расположен не последним среди своих соседних элементов
+  */
+p:where(:not([class]):not(:last-child)) {
+  margin-bottom: var(--paragraphMarginBottom); }
+
+/**
+   Упрощаем работу с изображениями и видео
+  */
+img,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+/**
+   Наследуем свойства шрифт для полей ввода
+  */
+input,
+textarea,
+select,
+button {
+  font: inherit; }
+
+html {
+  /**
+     Пригодится в большинстве ситуаций
+     (когда, например, нужно будет "прижать" футер к низу сайта)
+    */
+  height: 100%;
+  /**
+     Убираем скачок интерфейса по горизонтали
+     при появлении / исчезновении скроллбара
+    */
+  scrollbar-gutter: stable; }
+
+/**
+   Плавный скролл
+  */
+html,
+:has(:target) {
+  scroll-behavior: smooth; }
 
 body {
-  padding: 1rem;
+  /**
+     Пригодится в большинстве ситуаций
+     (когда, например, нужно будет "прижать" футер к низу сайта)
+    */
+  min-height: 100%;
+  /**
+     Унифицированный интерлиньяж
+    */
+  line-height: 1.5; }
+
+/**
+   Нормализация высоты элемента ссылки при его инспектировании в DevTools
+  */
+a:where([class]) {
+  display: inline-flex; }
+
+/**
+   Курсор-рука при наведении на элемент
+  */
+button,
+label {
+  cursor: pointer; }
+
+/**
+   Приводим к единому цвету svg-элементы
+   (за исключением тех, у которых уже указан
+   атрибут fill со значением 'none' или начинается с 'url')
+  */
+:where([fill]:not([fill='none'], [fill^='url'])) {
+  fill: currentColor; }
+
+/**
+   Приводим к единому цвету svg-элементы
+   (за исключением тех, у которых уже указан
+   атрибут stroke со значением 'none')
+  */
+:where([stroke]:not([stroke='none'], [stroke^='url'])) {
+  stroke: currentColor; }
+
+/**
+   Чиним баг задержки смены цвета при взаимодействии с svg-элементами
+  */
+svg * {
+  transition-property: fill, stroke; }
+
+/**
+   Приведение рамок таблиц в классический 'collapse' вид
+  */
+:where(table) {
+  border-collapse: collapse;
+  border-color: currentColor; }
+
+/**
+   Удаляем все анимации и переходы для людей,
+   которые предпочитают их не использовать
+  */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important; } }
+
+* {
+  font-family: "TT Lakes";
+  color: #1b1c21; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+.conditions {
+  border-bottom: 1px solid #D9FFF5;
+  padding-bottom: 40px; }
+  .conditions__text {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    -moz-user-select: none;
+         user-select: none; }
+  .conditions__text--mg {
+    margin-bottom: 16px; }
+
+@media (min-width: 768px) {
+  .conditions {
+    padding-bottom: 47px; }
+    .conditions__text {
+      max-width: 421px; } }
+
+@media (min-width: 1440px) {
+  .conditions {
+    padding-bottom: 50px; } }
+
+.content-container {
+  transition: 1s; }
+
+.content {
   margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: #24292e;
-  color: #fff; }
+  padding: 0;
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 768px) {
+    .content {
+      flex-direction: row;
+      gap: 48px; } }
+  @media (min-width: 1120px) {
+    .content {
+      flex-direction: row;
+      gap: 36px; } }
+  .content-wrapper {
+    margin: 0 0 16px 0;
+    padding: 0; }
+  .content__text {
+    height: 90px;
+    margin: 0 0 16px 0;
+    padding: 0 16px;
+    overflow: hidden;
+    /* text style */
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px; }
+    @media (min-width: 768px) {
+      .content__text {
+        width: 312px;
+        height: 160px;
+        padding: 0 0 0 24px;
+        margin-bottom: 10px;
+        line-height: 20px; } }
+    @media (min-width: 1120px) {
+      .content__text {
+        padding: 0 0 0 34px;
+        /* padding: 9.22px 0 0 34px; */
+        padding-left: 34px;
+        width: 490px;
+        height: 160px;
+        line-height: 20px;
+        margin-bottom: 13.78px; } }
+  @media (min-width: 768px) {
+    .content__image {
+      padding-right: 24px;
+      border-radius: 6px;
+      background: #f8f8f8;
+      overflow: hidden; } }
+  @media (min-width: 1120px) {
+    .content__image {
+      flex-shrink: 0;
+      border-radius: 6px;
+      background: #f8f8f8;
+      width: 531.346px;
+      height: 307px;
+      flex-shrink: 0;
+      position: relative;
+      bottom: 9.22px; } }
+
+.footer {
+  padding-top: 16px; }
+  .footer__privacy-policy {
+    text-decoration: none;
+    display: flex;
+    transition: all 0.4s; }
+    .footer__privacy-policy:hover {
+      color: black; }
+    .footer__privacy-policy:active {
+      color: black; }
+  .footer__privacy-policy-text {
+    padding-bottom: 19px;
+    text-align: center;
+    -moz-user-select: none;
+         user-select: none; }
+  .footer__privacy-policy, .footer__privacy-policy-text {
+    font-size: 14px;
+    line-height: 16px;
+    color: #7e7e82;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .footer__company-text--mg, .footer__privacy-policy--mg {
+    margin-bottom: 16px; }
+
+.footer-company-info {
+  display: flex;
+  flex-direction: column;
+  -moz-user-select: none;
+       user-select: none; }
+  .footer-company-info__year, .footer-company-info__text {
+    font-size: 14px;
+    line-height: 16px;
+    color: #7e7e82;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+    padding-bottom: 25px; }
+    .footer__privacy-policy {
+      width: 214px; }
+    .footer__privacy-policy-text {
+      width: 213px;
+      padding-bottom: 0;
+      text-align: end; }
+    .footer__company-text--mg, .footer__privacy-policy--mg {
+      margin-bottom: 0; }
+  .footer-company-info {
+    width: 218px; }
+    .footer-company-info__year {
+      align-items: flex-start; } }
+
+@media (min-width: 1440px) {
+  .footer {
+    width: 1120px;
+    padding-bottom: 21px; }
+    .footer__privacy-policy-text {
+      width: 330px;
+      padding-bottom: 21px; } }
+
+.header {
+  height: 88px;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-bottom: 1px solid #d9fff5; }
+  @media (min-width: 768px) {
+    .header {
+      padding: 0 24px;
+      height: 88px; } }
+  @media (min-width: 1120px) {
+    .header {
+      display: none; } }
+  .header__contact {
+    display: none;
+    justify-content: space-between;
+    gap: 16px;
+    margin-right: 20px; }
+    @media (min-width: 768px) {
+      .header__contact {
+        display: flex; } }
+  .header__repair {
+    display: flex;
+    gap: 16px; }
+
+.page-container {
+  background-color: #f8f8f8; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    .page-container {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 768px;
+      min-width: 320px;
+      position: relative; } }
+  @media (min-width: 767px) and (max-width: 1439px) {
+    .page-container {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1439px;
+      min-height: 100%;
+      position: relative; } }
+  @media (min-width: 1440px) {
+    .page-container {
+      margin: 0 auto;
+      max-width: 1440px;
+      min-height: 100%;
+      position: relative;
+      padding-left: 320px; } }
+
+.sidebar-footer {
+  padding: 0 0 32px 24px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0; }
+  .sidebar-footer__buttons {
+    margin-bottom: 16px;
+    display: flex;
+    gap: 16px; }
+  .sidebar-footer__mail {
+    margin-bottom: 12px;
+    color: #1b1c21;
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: -0.2px;
+    text-decoration: none;
+    transition: 1s; }
+    .sidebar-footer__mail:hover {
+      transition: 1s;
+      font-size: 2em;
+      color: #ff3e79; }
+  .sidebar-footer__tel {
+    margin-bottom: 40px;
+    color: #1b1c21;
+    font-family: 'TT Lakes';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    /* 133.333% */
+    letter-spacing: -0.6px;
+    text-decoration: none;
+    transition: 1s; }
+    .sidebar-footer__tel:hover {
+      transition: 1s;
+      font-size: 2em;
+      color: #ff3e79; }
+  .sidebar-footer__lang {
+    height: 24px;
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+    transition: 1s; }
+    .sidebar-footer__lang:hover {
+      transition: 1s;
+      font-size: 2em;
+      color: #ff3e79; }
+
+.sidebar-header {
+  height: 86px;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.sidebar-menu {
+  padding: 34px 0 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px; }
+  .sidebar-menu__link {
+    padding: 16px 0;
+    color: #1b1c21;
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: -0.2px; }
+    .sidebar-menu__link:hover {
+      color: #7e7e82; }
+    .sidebar-menu__link:focus {
+      color: #7e7e82; }
+    .sidebar-menu__link:focus::before {
+      content: url(./static/highlight.svg);
+      position: absolute;
+      left: 0;
+      margin-top: -5px; }
+
+.sidebar {
+  width: 320px;
+  height: 100%;
+  min-height: 770px;
+  /* предотвращает наложение footer на menu*/
+  position: absolute;
+  left: -320px;
+  z-index: 10;
+  background: #fff; }
+  @media (min-width: 1440px) {
+    .sidebar {
+      box-shadow: none;
+      transform: translateX(320px); } }
+
+.slide-menu {
+  margin: 0 0 24px 0;
+  padding-left: 16px;
+  list-style-type: none;
+  display: flex;
+  flex-shrink: 0;
+  overflow: hidden; }
+  @media (min-width: 768px) {
+    .slide-menu {
+      padding-left: 24px;
+      margin-bottom: 32px; } }
+  @media (min-width: 1120px) {
+    .slide-menu {
+      /* /* margin-bottom: 11.85px; */
+      margin-bottom: 11.85px;
+      padding-left: 32px;
+      flex-wrap: wrap;
+      row-gap: 5px;
+      /* overflow: hidden; */ } }
+  .slide-menu:before {
+    width: 24px;
+    height: 40px;
+    display: block;
+    position: fixed;
+    right: 0px;
+    content: '';
+    flex-shrink: 0;
+    background: linear-gradient(270deg, #f8f8f8 16.84%, rgba(248, 248, 248, 0) 100%); }
+  .slide-menu:after {
+    width: 24px;
+    height: 40px;
+    display: block;
+    position: fixed;
+    left: 0px;
+    transform: rotate(180deg);
+    flex-shrink: 0;
+    content: '';
+    background: linear-gradient(270deg, #f8f8f8 16.84%, rgba(248, 248, 248, 0) 100%); }
+  .slide-menu__item {
+    height: 24px;
+    margin-bottom: 20px; }
+  .slide-menu__link {
+    display: block;
+    padding: 6.63px 30px 5.37px 21.7px;
+    white-space: nowrap;
+    border-radius: 6px;
+    border: 2px solid #f8f8f8;
+    background: #f8f8f8;
+    /* text style */
+    font-family: 'TT Lakes';
+    color: #7e7e82;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-decoration: none; }
+    .slide-menu__link:hover {
+      border-radius: 6px;
+      border: 2px solid #b8ffec;
+      background: #fff; }
+
+.slider {
+  height: auto;
+  flex-shrink: 0;
+  background: #f8f8f8; }
+  @media (min-width: 768px) and (max-width: 1119px) {
+    .slider {
+      padding-bottom: 34px; } }
+  @media (min-width: 1120px) {
+    .slider {
+      width: 1120px;
+      padding-bottom: 34px; } }
+  .slider-header {
+    padding: 16px;
+    width: 100%;
+    height: 80px;
+    flex-shrink: 0;
+    background: linear-gradient(90deg, #f8f8f8 1.39%, #fff 100%);
+    border-top: 1px solid #d9fff5;
+    overflow: hidden; }
+    @media (min-width: 768px) and (max-width: 1119px) {
+      .slider-header {
+        height: 56px; } }
+    @media (min-width: 1120px) {
+      .slider-header {
+        height: 56px; } }
+    .slider-header__name {
+      color: #7e7e82;
+      font-family: 'TT Lakes';
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+      text-transform: uppercase; }
+
+.swiper::after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 81px;
+  width: 24px;
+  top: -5px;
+  right: 0;
+  z-index: 2;
+  background: linear-gradient(270deg, #f8f8f8 16.84%, rgba(248, 248, 248, 0.0001) 100%); }
+
+.swiper.swiper-custom {
+  height: 154px; }
+  @media (min-width: 768px) and (max-width: 1119px) {
+    .swiper.swiper-custom {
+      height: 184px;
+      margin-bottom: 24px; } }
+
+.swiper-wrapper {
+  height: 100%;
+  width: 100%;
+  padding: 16px 0 0 16px;
+  -moz-column-gap: 16px;
+       column-gap: 16px; }
+  .swiper-wrapper-custom {
+    height: calc(16px+72px+16px+12px+38px); }
+  @media (min-width: 768px) and (max-width: 1119px) {
+    .swiper-wrapper.swiper-wrapper-custom {
+      height: 100%;
+      padding: 24px 0 0 24px;
+      flex-wrap: wrap;
+      row-gap: 16px;
+      -moz-column-gap: 24px;
+           column-gap: 24px; } }
+  @media (min-width: 1119px) {
+    .swiper-wrapper.swiper-wrapper-custom {
+      padding: 24px 0 0 32px;
+      height: 100%;
+      flex-wrap: wrap;
+      row-gap: 16px;
+      -moz-column-gap: 32px;
+           column-gap: 32px; } }
+
+@media (min-width: 768px) and (max-width: 1119px) {
+  .swiper-slide-active {
+    height: auto; } }
+
+.swiper-slide.swiper-slide-custom {
+  width: auto; }
+
+.swiper-pagination {
+  /* https://swiperjs.com/swiper-api#pagination-css-custom-properties */
+  --swiper-pagination-top: calc(16px + 72px + 16px);
+  --swiper-pagination-bullet-width: 12px;
+  --swiper-pagination-bullet-height: 12px;
+  /* --swiper-pagination-bullet-size: 12px; */
+  --swiper-pagination-bullet-horizontal-gap: 6px;
+  --swiper-pagination-color: #b5b6bc;
+  --swiper-pagination-bullet-inactive-color: #dddddd;
+  --swiper-pagination-bullet-inactive-opacity: 1; }
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #b5b6bc; }
+
+.swiper-slide__brand-card {
+  box-sizing: border-box;
+  padding: 0 16px 0 16px;
+  width: 240px;
+  height: 72px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  border: 1px solid #eaeaea;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  @media (min-width: 768px) and (max-width: 1119px) {
+    .swiper-slide__brand-card {
+      width: 224px; } }
+
+.title {
+  padding: 24px 30px 0 0;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  box-sizing: content-box; }
+  @media (min-width: 768px) {
+    .title {
+      width: 768px; } }
+  @media (min-width: 1120px) {
+    .title {
+      width: 1120px;
+      padding: 42px 30px 0 0; } }
+  .title-text {
+    margin: 0 auto 0 0;
+    color: #1b1c21;
+    font-family: 'TT Lakes';
+    font-size: 28px;
+    font-style: normal;
+    line-height: 40px;
+    letter-spacing: -0.6px; }
+  .title-repair {
+    gap: 32px;
+    display: none; }
+    @media (min-width: 1120px) {
+      .title-repair {
+        display: flex; } }
+    .title-repair__link {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      text-align: right;
+      /* text style */
+      color: #1b1c21;
+      font-family: 'TT Lakes';
+      text-decoration: none; }
+      .title-repair__link:hover {
+        outline: 1px solid lightpink;
+        background-color: white; }
+
+@media (min-width: 768px) {
+  .title-and-repair-wrap {
+    margin-bottom: 32px; } }
+
+.title-and-repair-wrap {
+  padding: 42px 32px 0 0;
+  margin-bottom: 8.37px; }
+
+.title-block {
+  gap: 30px; }
+
+.btn-round {
+  border: transparent;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  border: transparent;
+  background-color: transparent;
+  transition: 1s; }
+  .btn-round:hover {
+    scale: 1.1;
+    /* transform: scale(110%); */
+    opacity: 0.5; }
+
+.btn-lang {
+  color: #1b1c21;
+  font-family: 'TT Lakes';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  /* 150% */
+  letter-spacing: -0.2px;
+  border: none;
+  background-color: transparent;
+  outline: none; }
+  .btn-lang:focus {
+    color: #7E7E82; }
+
+.btn-readmore {
+  height: 24px;
+  padding: 0 0 0 16px;
+  border: transparent;
+  background-color: transparent;
+  /* text style */
+  font-family: 'TTLakes-Medium';
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  display: flex;
+  gap: 8px; }
+  .btn-readmore:hover {
+    background-color: lightseagreen; }
+  @media (min-width: 768px) {
+    .btn-readmore {
+      padding-left: 25px; } }
+  @media (min-width: 1120px) {
+    .btn-readmore {
+      padding-left: 33px; } }
+
+.button-expand {
+  height: 24px;
+  margin-left: 24px;
+  border: transparent;
+  background-color: transparent;
+  display: flex;
+  gap: 8px;
+  color: #1b1c21;
+  font-family: 'TT Lakes';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  transition: 1s; }
+  .button-expand:hover {
+    opacity: 0.5;
+    /* transform: scale(125%); */ }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .button-expand {
+      display: none; } }
+  @media (min-width: 768px) and (max-width: 1119px) {
+    .button-expand {
+      margin-left: 32px; } }
+
+.btn-conditions {
+  display: block;
+  position: relative;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  transition: all 0.4s;
+  max-width: 192px;
+  filter: drop-shadow(1px 1px 3px #b5b6bc); }
+  @media (min-width: 768px) {
+    .btn-conditions {
+      font-size: 16px;
+      max-width: 316px; } }
+  .btn-conditions:hover {
+    color: #7e7e82; }
+  .btn-conditions:active {
+    color: #7e7e82; }
+  .btn-conditions__arrow-image {
+    display: block;
+    width: 24px;
+    height: 27.49px;
+    background-image: url(./static/arrow_more.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    left: 100px;
+    bottom: -3px; }
+    @media (min-width: 768px) {
+      .btn-conditions__arrow-image {
+        left: 289px;
+        bottom: -2px; } }
+
+.dec-divider {
+  width: 2px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 1px;
+  background: #eaeaea;
+  margin: 0 20px 0 0; }
+
+.dec-divider--hidden {
+  width: 2px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 1px;
+  background: #eaeaea;
+  margin: 0 4px 0 20px; }
+  @media (max-width: 767px) {
+    .dec-divider--hidden {
+      display: none; } }
+
+.dec-highlight {
+  width: 4px;
+  height: 40px;
+  background-image: url(./static/highlight.svg);
+  margin-right: 12px; }
+  @media (min-width: 768px) {
+    .dec-highlight {
+      margin-right: 20px; } }
+  @media (min-width: 1120px) {
+    .dec-highlight {
+      background-image: url(./static/highlight-rounded.svg);
+      margin-right: 30px; } }
+
+.ic-burger {
+  background-image: url(./static/burger.svg);
+  width: 40px;
+  height: 40px; }
+
+.ic-call {
+  background-image: url(./static/call.svg);
+  width: 40px;
+  height: 40px; }
+
+.ic-chat {
+  background-image: url(./static/chat.svg);
+  width: 40px;
+  height: 40px; }
+
+.ic-checkstatus {
+  background-image: url(./static/checkstatus.svg);
+  width: 40px;
+  height: 40px; }
+
+.ic-cross {
+  background-image: url(./static/cross.svg); }
+
+.ic-profile {
+  background-image: url(./static/profile.svg);
+  width: 40px;
+  height: 40px; }
+
+.ic-repair {
+  background-image: url(./static/repair.svg);
+  width: 40px;
+  height: 40px; }
+
+.ic-search {
+  background-image: url(./static/search.svg); }
+
+.ic-expand {
+  background-image: url(./static/expand.svg);
+  width: 24px;
+  height: 24px; }
+
+.logo-CPS {
+  background-image: url(./static/logo-CPS.svg);
+  width: 98px;
+  height: 52px;
+  flex-shrink: 0;
+  margin: 0 auto 0 16.73px; }
+  .logo-CPS:hover {
+    outline: 1px solid lightpink;
+    background-color: #F8F8F8; }
 
 
 /*# sourceMappingURL=style.css.map*/

@@ -1361,7 +1361,7 @@ a {
   height: 100%;
   min-height: 770px;
   /* предотвращает наложение footer на menu*/
-  position: static;
+  position: absolute;
   left: -320px;
   background: #fff;
   transition: 1s;

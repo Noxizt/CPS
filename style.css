@@ -1385,7 +1385,8 @@ a {
   @media (min-width: 1440px) {
     .sidebar {
       box-shadow: none;
-      opacity: 1; } }
+      opacity: 1;
+      left: 0; } }
 
 .slide-menu {
   margin: 0 0 24px 0;

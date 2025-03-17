@@ -1370,12 +1370,12 @@ a {
   @media (min-width: 0px) and (max-width: 767px) {
     .sidebar {
       transition: 1s;
-      visibility: hidden; } }
+      display: none; } }
   @media (min-width: 767px) and (max-width: 1439px) {
     .sidebar {
       transition: all 1s;
       opacity: 1;
-      visibility: visible; } }
+      display: none; } }
   @media (min-width: 1440px) {
     .sidebar {
       box-shadow: none;

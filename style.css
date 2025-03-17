@@ -1253,6 +1253,7 @@ a {
   background-color: #f8f8f8; }
   @media (min-width: 0px) and (max-width: 767px) {
     .page-container {
+      display: flex;
       margin-left: auto;
       margin-right: auto;
       max-width: 768px;
@@ -1260,6 +1261,7 @@ a {
       position: relative; } }
   @media (min-width: 767px) and (max-width: 1439px) {
     .page-container {
+      display: flex;
       margin-left: auto;
       margin-right: auto;
       max-width: 1439px;

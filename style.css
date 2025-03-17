@@ -1268,6 +1268,7 @@ a {
       display: flex;
       justify-content: center;
       margin: auto auto;
+      max-width: 1440px;
       position: relative; } }
 
 .sidebar-footer {

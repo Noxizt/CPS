@@ -1,5 +1,7 @@
 [CPS (gh-pages)](https://noxizt.github.io/CPS/)
 --
+Webpack 4
+--
 node v14.18.3
 --
 npm v6.14.15

@@ -1,6 +1,8 @@
 [CPS (gh-pages)](https://noxizt.github.io/CPS/)
 --
-node v.14.18.3
+node v14.18.3
 --
-npm v.6.14.15
+npm v6.14.15
+--
+SwiperJS v11.2.4 (via CDN)
 --

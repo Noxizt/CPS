@@ -10,8 +10,7 @@
   <link href="style.css" rel="stylesheet"></head>
 
   <body class="page-container">
-
-
+    
     <aside class="sidebar">
       <div class="sidebar-header side-bar--mg">
         <button class="btn-round ic-cross" title="Закрыть"></button>
@@ -40,11 +39,53 @@
         <a class="sidebar-footer__tel" href="tel:88008908900">8 800 890 8900</a>
         <div class="sidebar-footer__lang">
           <button class="btn-lang" title="Переключить на русский язык">RU</button>
-          <button class="btn-lang" title="Переключить на английский язык">EN</button>
-          <button class="btn-lang" title="Переключить на китайский язык">CH</button>
+          <button class="btn-lang" title="Переключить на английский язык">EN</button>>CH
         </div>
       </footer>
     </aside>
+
+    <div class="modal modal--feedback feedback">
+      <button class="feedback__icon feedback__icon--close"></button>
+      <h2 class="feedback__title">Обратная связь</h2>
+      <form class="feedback-form">
+        <div class="feedback__label feedback-label">
+          <input class="feedback-form__item" type="text" name="name" placeholder="Имя">
+          <input class="feedback-form__item" type="tel" name="name" placeholder="Телефон">
+          <input class="feedback-form__item" type="email" name="name" placeholder="Электронная почта">
+          <textarea class="feedback-form__item feedback-form__item--message" name="name" placeholder="Сообщение" required></textarea>
+          <p class="feedback-form__desc">
+            Нажимая “отправить”, вы даете согласие на
+            <a class="feedback-form__link" href="#">обработку персональных данных</a>
+            и соглашаетесь с нашей
+            <a class="feedback-form__link" href="#">политикой конфиденциальности</a>
+          </p>
+          <button class="feedback__button">
+            ОТПРАВИТЬ
+            <span class="feedback__icon feedback__icon--dropdown"></span>
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div class="modal modal--call call">
+      <button class="feedback__icon feedback__icon--close"></button>
+      <h2 class="feedback__title">Заказать звонок</h2>
+      <form class="feedback-form">
+        <div class="feedback__label feedback-label">
+          <input class="feedback-form__item" type="tel" name="name" placeholder="Телефон">
+          <p class="feedback-form__desc">
+            Нажимая “отправить”, вы даете согласие на
+            <a class="feedback-form__link" href="#">обработку персональных данных</a>
+            и соглашаетесь с нашей
+            <a class="feedback-form__link" href="#">политикой конфиденциальности</a>
+          </p>
+          <button class="feedback__button">
+            ОТПРАВИТЬ
+            <span class="feedback__icon feedback__icon--dropdown"></span>
+          </button>
+        </div>
+      </form>
+    </div>
 
     <div class="content-container">
       <header class="header">
@@ -62,8 +103,6 @@
           <button class="btn-round ic-checkstatus" alt="Статус ремонта"></button>
         </div>
       </header>
-
-      
 
       <main>
         

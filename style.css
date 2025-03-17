@@ -1075,6 +1075,45 @@ a {
   color: inherit;
   text-decoration: none; }
 
+.modal {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 16px;
+  height: 100vh;
+  width: 320px;
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+  background-color: #ffffff; }
+  @media (min-width: 767px) and (max-width: 1439px) {
+    .modal {
+      padding: 40px 24px 32px 32px;
+      width: 440px;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      z-index: 10; }
+      .modal--call {
+        display: block;
+        right: -320px;
+        transition: all 1s; }
+      .modal--feedback {
+        display: block;
+        right: -320px;
+        transition: all 1s; } }
+  @media (min-width: 1440px) {
+    .modal {
+      padding: 40px 24px 32px 32px;
+      width: 440px;
+      position: fixed;
+      top: 0vh;
+      right: -540px;
+      z-index: 10; }
+      .modal--call {
+        right: -540px; }
+      .modal--feedback {
+        right: -540px; } }
+
 .conditions {
   border-bottom: 1px solid #D9FFF5;
   padding-bottom: 40px; }

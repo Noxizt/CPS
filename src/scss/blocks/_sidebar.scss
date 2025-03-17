@@ -2,27 +2,52 @@
   // display:none;
   // visibility: hidden;
   // visibility: visible;
+  // margin-left: auto;
   width: 320px;
   height: 100%;
   min-height: 770px; /* предотвращает наложение footer на menu*/
   // margin-bottom: 2px;
   position: absolute;
   // top: 0;
-  left: -300px;
-  z-index: 10;
+  // left: -320px;
+  left: 0;
+  
+  // z-index: 10;
   background: #fff;
   // box-shadow: -2px 0px 4px 0px rgba(69, 79, 126, 0.02), 16px 0px 52px 0px rgba(14, 24, 80, 0.20);
 
   // box-shadow: 5px 0 30px 0 #1b1c215f;
+  transition: 1s;
+ 
+  z-index: 10;
 
+  
   @media (min-width: 0px) and (max-width: 767px) {
+    transition: 1s;
+    // left: -320px;
+    // visibility: hidden;
+    // display: none;
+      box-shadow: -2px 0px 4px 0px rgba(69, 79, 126, 0.02), 16px 0px 52px 0px rgba(14, 24, 80, 0.20);
+
+  box-shadow: 5px 0 30px 0 #1b1c215f;
   }
   @media (min-width: 767px) and (max-width: 1439px) {
+    transition: all 1s;
+    // left: -320px;
+ 
+    // visibility: visible;
+    // display: none;
+      box-shadow: -2px 0px 4px 0px rgba(69, 79, 126, 0.02), 16px 0px 52px 0px rgba(14, 24, 80, 0.20);
+
+  box-shadow: 5px 0 30px 0 #1b1c215f;
   }
 
   @media (min-width: 1440px) {
     box-shadow: none;
     // visibility: visible;
+
+    // z-index: -1;
     left: 0;
+   
   }
 }

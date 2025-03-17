@@ -24,11 +24,42 @@ window.addEventListener('resize', function () {
   if (window.innerWidth < 768) {
     // swiper.updateAutoHeight(1);
     swiper.enable()
-  } else if (window.innerWidth >= 768) {
+  }
+  if (window.innerWidth >= 768) {
     swiper.realIndex = 0 // устанавка активного слайда по индексу
     swiper.disable()
     swiper.updateAutoHeight(1)
   }
+//   if (window.innerWidth < 1440) {
+//     document.querySelector('.sidebar').animate(
+//         [
+//           {
+//             transform: 'translateX(-320px)'
+    
+//             // opacity: [0, 1]
+//           }
+//         ],
+//         {
+//           duration: 1000,
+//           fill: 'forwards'
+//         }
+//       )
+//   }
+//   if (window.innerWidth >= 1440) {
+//     document.querySelector('.sidebar').animate(
+//         [
+//           {
+//             transform: 'translateX(320px)'
+    
+//             // opacity: [0, 1]
+//           }
+//         ],
+//         {
+//           duration: 1000,
+//           fill: 'forwards'
+//         }
+//       )
+//   }
 })
 
 // Expand кнопка
@@ -63,31 +94,52 @@ document.querySelector('.button-expand').addEventListener('click', () => {
 
 // кнопка БУРГЕР МЕНЮ
 document.querySelector('.ic-burger').addEventListener('click', () => {
+//   document.querySelector('.sidebar').display = 'block'
+//   document.querySelector('.sidebar').style.left = '-320px'
   document.querySelector('.sidebar').animate(
     [
       {
-        transform: 'translateX(300px)'
+        // transform: 'translateX(320px)',
+        opacity: '[0, 1]'
+        // opacity: [0, 1]
       }
     ],
     {
-      duration: 1000,
-      fill: 'forwards',
+      duration: 700,
+    //   delay: 1,
+      fill: 'forwards'
     }
   )
+  //   document.querySelector('.sidebar').animate(
+  //     [
+  //       {
+  //         // transform: 'opacity[0, 1]'
+  //         transform: 'translateX(320px)'
+  //       }
+  //     ],
+  //     {
+  //       duration: 1000,
+  //       fill: 'forwards'
+  //     }
+  //   )
 })
 
 // кнопка КРЕСТИК
 document.querySelector('.ic-cross').addEventListener('click', () => {
-  //   document.querySelector('.sidebar').style.left = '-500px'
+  //   document.querySelector('.sidebar').style.left = '0'
   document.querySelector('.sidebar').animate(
     [
       {
-        transform: 'translateX(-300px)'
+        // transform: 'translateX(-320px)',
+        // transform: 'opacity[1, 0]'
+        opacity: [1, 0]
       }
     ],
     {
-      duration: 1000,
-      fill: 'forwards',
+      duration: 700,
+      delay: 100,
+      fill: 'forwards'
     }
   )
+//   document.querySelector('.sidebar').style.left = '0'
 })

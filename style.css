@@ -1266,6 +1266,7 @@ a {
   @media (min-width: 1440px) {
     .page-container {
       display: flex;
+      justify-content: space-between;
       margin: auto auto;
       position: relative; } }
 

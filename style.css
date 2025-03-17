@@ -1256,23 +1256,17 @@ a {
       display: flex;
       margin-left: auto;
       margin-right: auto;
-      max-width: 768px;
-      min-width: 320px;
       position: relative; } }
   @media (min-width: 767px) and (max-width: 1439px) {
     .page-container {
       display: flex;
       margin-left: auto;
       margin-right: auto;
-      max-width: 1439px;
-      min-height: 100%;
       position: relative; } }
   @media (min-width: 1440px) {
     .page-container {
       display: flex;
       margin: 0 auto;
-      max-width: 1440px;
-      min-height: 100%;
       position: relative; } }
 
 .sidebar-footer {

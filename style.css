@@ -1266,7 +1266,7 @@ a {
   @media (min-width: 1440px) {
     .page-container {
       display: flex;
-      margin: 0 auto;
+      margin: auto auto;
       position: relative; } }
 
 .sidebar-footer {

@@ -1,6 +1,6 @@
 // Инициализация Свайпера
 const swiper = new Swiper('.swiper', {
-  // loop: true,
+  loop: true,
   slidesPerView: 'auto',
   pagination: {
     el: '.swiper-pagination',

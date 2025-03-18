@@ -1,4 +1,4 @@
-.slider {
+.slider-brands {
   height: auto;
   flex-shrink: 0;
   background: #f8f8f8;
@@ -53,10 +53,7 @@
       rgba(248, 248, 248, 0.0001) 100%
     );
   }
-  &-custom {
-  }
-
-  &.swiper-custom {
+  &-brands {
     height: 154px;
     @media (min-width: 768px) and (max-width: 1119px) {
       height: 184px;
@@ -69,11 +66,11 @@
     width: 100%;
     padding: 16px 0 0 16px;
     column-gap: 16px;
-    &-custom {
+    &-brands {
       height: calc(16px+72px+16px+12px+38px);
     }
 
-    &.swiper-wrapper-custom {
+    &.swiper-wrapper-brands {
       @media (min-width: 768px) and (max-width: 1119px) {
         height: 100%;
         padding: 24px 0 0 24px;
@@ -97,9 +94,7 @@
         height: auto;
       }
     }
-    &-custom {
-    }
-    &.swiper-slide-custom {
+    &-brands {
       width: auto;
     }
   }

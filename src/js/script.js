@@ -1,6 +1,6 @@
 // Инициализация Свайпера
 const swiper = new Swiper('.swiper', {
-  loop: true,
+  // loop: true,
   slidesPerView: 'auto',
   pagination: {
     el: '.swiper-pagination',
@@ -30,36 +30,6 @@ window.addEventListener('resize', function () {
     swiper.disable()
     swiper.updateAutoHeight(1)
   }
-//   if (window.innerWidth < 1440) {
-//     document.querySelector('.sidebar').animate(
-//         [
-//           {
-//             transform: 'translateX(-320px)'
-    
-//             // opacity: [0, 1]
-//           }
-//         ],
-//         {
-//           duration: 1000,
-//           fill: 'forwards'
-//         }
-//       )
-//   }
-//   if (window.innerWidth >= 1440) {
-//     document.querySelector('.sidebar').animate(
-//         [
-//           {
-//             transform: 'translateX(320px)'
-    
-//             // opacity: [0, 1]
-//           }
-//         ],
-//         {
-//           duration: 1000,
-//           fill: 'forwards'
-//         }
-//       )
-//   }
 })
 
 // Expand кнопка
@@ -67,79 +37,106 @@ document.querySelector('.button-expand').addEventListener('click', () => {
   if (
     document.querySelector('.button-expand_inner').innerHTML === 'Показать все'
   ) {
-    document.querySelector('.swiper.swiper-custom').style.height = '272px'
+    document.querySelector('.swiper.swiper-brands').style.height = '272px'
     document.querySelector('.button-expand_inner').innerHTML = 'Скрыть'
   } else if (
     document.querySelector('.button-expand_inner').innerHTML === 'Скрыть'
   ) {
-    document.querySelector('.swiper.swiper-custom').style.height = '184px'
+    document.querySelector('.swiper.swiper-brands').style.height = '184px'
     document.querySelector('.button-expand_inner').innerHTML = 'Показать все'
   }
 })
 
-// btn-Call
-// buttonCall.forEach((button) => {
-//     button.addEventListener("click", () => {
-//       if (countCall < 2) {
-//         contentContainer.style.opacity = "0.3";
-//         call.style.right = "0px";
-//         sideBar.style.left = window.innerWidth < 1440 ? "-360px" : "0px";
-//         if (window.innerWidth >= 1440) {
-//           sideBar.style.opacity = '0.3';
-//         }
-//         countCall++;
-//       }
-//     });
-//   });
-
 // кнопка БУРГЕР МЕНЮ
-document.querySelector('.ic-burger').addEventListener('click', () => {
-//   document.querySelector('.sidebar').display = 'block'
-//   document.querySelector('.sidebar').style.left = '-320px'
+document.querySelector('.btn-burger').addEventListener('click', () => {
   document.querySelector('.sidebar').animate(
     [
       {
-        // transform: 'translateX(320px)',
-        opacity: '[0, 1]'
-        // opacity: [0, 1]
+        transform: 'translateX(375px)'
       }
     ],
     {
-      duration: 700,
-    //   delay: 1,
+      duration: 500,
       fill: 'forwards'
     }
   )
-  //   document.querySelector('.sidebar').animate(
-  //     [
-  //       {
-  //         // transform: 'opacity[0, 1]'
-  //         transform: 'translateX(320px)'
-  //       }
-  //     ],
-  //     {
-  //       duration: 1000,
-  //       fill: 'forwards'
-  //     }
-  //   )
 })
 
 // кнопка КРЕСТИК
-document.querySelector('.ic-cross').addEventListener('click', () => {
-  //   document.querySelector('.sidebar').style.left = '0'
+document.querySelector('.btn-burger-close').addEventListener('click', () => {
   document.querySelector('.sidebar').animate(
     [
       {
-        // transform: 'translateX(-320px)',
-        // transform: 'opacity[1, 0]'
-        opacity: [1, 0]
+        transform: 'translateX(-375px)'
+
       }
     ],
     {
       duration: 700,
-      delay: 100,
+      delay: 200,
       fill: 'forwards'
     }
   )
-//   document.querySelector('.sidebar').style.left = '0'
+})
+
+// btn-call
+document.querySelector('.btn-call').addEventListener('click', () => {
+  document.querySelector('.side-call').animate(
+    [
+      {
+        transform: 'translateX(-550px)'
+      }
+    ],
+    {
+      duration: 500,
+      fill: 'forwards'
+    }
+  )
+})
+
+//btn-call-close
+document.querySelector('.btn-call-close').addEventListener('click', () => {
+  document.querySelector('.side-call').animate(
+    [
+      {
+        transform: 'translateX(550px)'
+      }
+    ],
+    {
+      duration: 700,
+      delay: 200,
+      fill: 'forwards'
+    }
+  )
+})
+
+// btn-message
+document.querySelector('.btn-message').addEventListener('click', () => {
+  document.querySelector('.side-message').animate(
+    [
+      {
+        transform: 'translateX(-550px)'
+      }
+    ],
+    {
+      duration: 500,
+      fill: 'forwards'
+    }
+  )
+})
+
+//btn-message-close
+document.querySelector('.btn-message-close').addEventListener('click', () => {
+  document.querySelector('.side-message').animate(
+    [
+      {
+        transform: 'translateX(550px)'
+      }
+    ],
+    {
+      duration: 700,
+      delay: 200,
+      fill: 'forwards'
+    }
+  )
 })

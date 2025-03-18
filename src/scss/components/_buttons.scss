@@ -1,7 +1,9 @@
-.btn-round {
-  border: transparent;
-  background-color: transparent;
-  width: 40px;
+.btn {
+  // GLOBAL BUTTON STYLES
+  &-round {
+    border: transparent;
+    background-color: transparent;
+    width: 40px;
     height: 40px;
     border: transparent;
     background-color: transparent;
@@ -9,24 +11,75 @@
     &:hover {
       scale: 1.1; /* transform: scale(110%); */
       opacity: 0.5;
+    }
+  }
+  &-ellipse {
+    &--slider{
+
+    }
+  }
+  // BUTTONS
+  &-burger{
+    background-image: url('../img/burger.svg');
+    &-close {
+      background-image: url('../img/cross.svg');
+    }
+  }
+  &-call {
+    background-image: url('../img/call.svg');
+    &-close {
+      background-image: url('../img/cross.svg');
+    }
+    &-send {
+      &-inner {
+        
+      }
+    }
+  }
+  &-message {
+    background-image: url('../img/chat.svg');
+    &-close {
+      background-image: url('../img/cross.svg');
+    }
+    &-send {
+      &-inner {
+
+      }
+    }
+  }
+  &-checkstatus {
+    background-image: url('../img/checkstatus.svg');
+  }
+  &-profile {
+    background-image: url('../img/profile.svg');
+  }
+  &-repair {
+    background-image: url('../img/repair.svg');
+  }
+  &-search {
+    background-image: url('../img/search.svg');
+  }
+  &-expand {
+    background-image: url('../img/expand.svg');
+  }
+
+  &-lang {
+    color: #1b1c21;
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    &:focus {
+      color: #7e7e82;
+    }
   }
 }
 
-.btn-lang {
-  color: #1b1c21;
-  font-family: 'TT Lakes';
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px; /* 150% */
-  letter-spacing: -0.2px;
-  border: none;
-  background-color: transparent;
-  outline: none;
-  &:focus {
-    color: #7E7E82;
-  }
-}
 
 .btn-readmore {
   height: 24px;

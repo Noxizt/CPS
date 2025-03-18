@@ -10,7 +10,7 @@
   position: absolute;
   // top: 0;
   // left: -320px;
-  left: 0;
+  // left: 0;
   
   // z-index: 10;
   background: #fff;
@@ -24,7 +24,7 @@
   
   @media (min-width: 0px) and (max-width: 767px) {
     transition: 1s;
-    // left: -320px;
+    left: -375px;
     // visibility: hidden;
     // display: none;
       box-shadow: -2px 0px 4px 0px rgba(69, 79, 126, 0.02), 16px 0px 52px 0px rgba(14, 24, 80, 0.20);
@@ -33,7 +33,7 @@
   }
   @media (min-width: 767px) and (max-width: 1439px) {
     transition: all 1s;
-    // left: -320px;
+    left: -375px;
  
     // visibility: visible;
     // display: none;

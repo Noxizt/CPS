@@ -14,12 +14,11 @@
     }
   }
   &-ellipse {
-    &--slider{
-
+    &--slider {
     }
   }
   // BUTTONS
-  &-burger{
+  &-burger {
     background-image: url('../img/burger.svg');
     &-close {
       background-image: url('../img/cross.svg');
@@ -32,7 +31,6 @@
     }
     &-send {
       &-inner {
-        
       }
     }
   }
@@ -43,7 +41,6 @@
     }
     &-send {
       &-inner {
-
       }
     }
   }
@@ -79,7 +76,6 @@
     }
   }
 }
-
 
 .btn-readmore {
   height: 24px;
@@ -164,6 +160,83 @@
     @media (min-width: 768px) {
       left: 289px;
       bottom: -2px;
+    }
+  }
+}
+
+.side-call {
+  &__button {
+    color: #ffffff;
+    background: #ff3e79;
+    font-size: 12px;
+    padding: 4px;
+    padding-left: 14px;
+    width: 136px;
+    height: 32px;
+    border-radius: 16px;
+    border: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 600;
+    align-self: flex-end;
+    transition: 0.5s;
+    &:hover {
+      opacity: 0.5;
+      scale: 0.97;
+    }
+  }
+  &__icon {
+    width: 40px;
+    height: 40px;
+    border: transparent;
+    border-radius: 50%;
+    // background: url(../img/cross.svg) no-repeat 50% 50%;
+    // background-color: #ff3e79;
+    transition: 0.5s;
+    &__icon:hover {
+      opacity: 0.5;
+      scale: 0.97;
+    }
+  }
+  &__icon--dropdown {
+    height: 24px;
+    width: 24px;
+    background: url(../img/arrow_right_transparent.svg) no-repeat 50% 50%;
+  }
+}
+
+.btn-order {
+  color: #ffffff;
+  background: #ff3e79;
+  font-size: 12px;
+  padding: 4px;
+  padding-left: 14px;
+  width: 136px;
+  height: 32px;
+  border-radius: 16px;
+  border: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: 600;
+  align-self: flex-end;
+  transition: 0.5s;
+  &:hover {
+    opacity: 0.5;
+    scale: 0.97;
+  }
+  &__icon {
+    height: 24px;
+    width: 24px;
+    background: url(../img/arrow_right_transparent.svg) no-repeat 50% 50%;
+    border: transparent;
+    border-radius: 50%;
+    // background-color: #ff3e79;
+    transition: 0.5s;
+    &__icon:hover {
+      opacity: 0.5;
+      scale: 0.97;
     }
   }
 }

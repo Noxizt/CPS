@@ -30,32 +30,8 @@
     z-index: 10;
     // transition: all 1s;
   }
-  &__icon {
-    width: 40px;
-    height: 40px;
-    border: transparent;
-    border-radius: 50%;
-    background: url(../img/cross.svg) no-repeat 50% 50%;
-    background-color: #ff3e79;
-    transition: 0.5s;
-    @media (min-width: 0px) and (max-width: 767px) {
-    }
-    @media (min-width: 767px) and (max-width: 1439px) {
-    }
-    @media (min-width: 1440px) {
-    }
-    &__icon:hover {
-      opacity: 0.5;
-      scale: 0.97;
-    }
-  }
-  &__button {
-    transition: 0.5s;
-    &:hover {
-      opacity: 0.5;
-      scale: 0.97;
-    }
-  }
+  
+  
 
   &__icon--close {
     margin-bottom: 40px;
@@ -87,29 +63,7 @@
     margin-top: -10px;
   }
 
-  &__button {
-    color: #ffffff;
-    background: #ff3e79;
-    font-size: 12px;
-    padding: 4px;
-    padding-left: 14px;
-    width: 136px;
-    height: 32px;
-    border-radius: 16px;
-    border: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    font-weight: 600;
-    align-self: flex-end;
-  }
-
-  &__icon--dropdown {
-    height: 24px;
-    width: 24px;
-    background: #ff3e79;
-    background: url(../img/dropdown.svg) no-repeat 50% 50%;
-  }
+  
 
   @media (min-width: 767px) and (max-width: 1439px) {
     &__icon--close {
@@ -145,28 +99,7 @@
       margin-top: -10px;
     }
 
-    &__button {
-      color: #ffffff;
-      background: #ff3e79;
-      font-size: 12px;
-      padding: 4px;
-      padding-left: 14px;
-      width: 136px;
-      height: 32px;
-      border-radius: 16px;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      font-weight: 600;
-      align-self: flex-end;
-    }
-
-    &__icon--dropdown {
-      height: 24px;
-      width: 24px;
-      background: #ff3e79;
-      background: url(../img/dropdown.svg) no-repeat 50% 50%;
-    }
+    
   }
 
   @media (min-width: 1440px) {
@@ -203,28 +136,7 @@
       margin-top: -10px;
     }
 
-    &__button {
-      color: #ffffff;
-      background: #ff3e79;
-      font-size: 12px;
-      padding: 4px;
-      padding-left: 14px;
-      width: 136px;
-      height: 32px;
-      border-radius: 16px;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      font-weight: 600;
-      align-self: flex-end;
-    }
-
-    &__icon--dropdown {
-      height: 24px;
-      width: 24px;
-      background: #ff3e79;
-      background: url(../img/dropdown.svg) no-repeat 50% 50%;
-    }
+    
   }
   &-form {
     &__item {

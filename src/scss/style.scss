@@ -10,11 +10,9 @@
 @import 'global/global'; // global settings
 
 // blocks
-
 @import 'blocks/conditions';
 @import 'blocks/content-container';
 @import 'blocks/content';
-
 @import 'blocks/feedback';
 @import 'blocks/footer';
 @import 'blocks/header';
@@ -27,6 +25,8 @@
 @import 'blocks/sidebar';
 @import 'blocks/slide-menu';
 @import 'blocks/slider-brands';
+@import 'blocks/slider-electronics';
+@import 'blocks/slider-prices';
 @import 'blocks/title';
 
 // components

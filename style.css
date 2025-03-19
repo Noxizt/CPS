@@ -1855,26 +1855,24 @@ a {
 .swiper-brands {
   height: 154px; }
   @media (min-width: 0px) and (max-width: 767px) {
-    .swiper-brands {
-      padding-left: 16px; }
-      .swiper-brands::before {
-        content: '';
-        display: block;
-        position: absolute;
-        height: 80px;
-        width: 24px;
-        right: 0px;
-        z-index: 2;
-        background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%); }
-      .swiper-brands::after {
-        content: '';
-        display: block;
-        position: absolute;
-        height: 80px;
-        width: 24px;
-        left: 0px;
-        z-index: 2;
-        background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%); } }
+    .swiper-brands::before {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 72px;
+      width: 24px;
+      right: 0px;
+      z-index: 2;
+      background: linear-gradient(270deg, #f8f8f8 16.84%, rgba(248, 248, 248, 0.0001) 100%); }
+    .swiper-brands::after {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 72px;
+      width: 24px;
+      left: 0px;
+      z-index: 2;
+      background: linear-gradient(270deg, #f8f8f8 16.84%, rgba(248, 248, 248, 0.0001) 100%); } }
   @media (min-width: 768px) {
     .swiper-brands {
       height: 184px;
@@ -1985,26 +1983,24 @@ a {
 .swiper-electronics {
   height: 228px; }
   @media (min-width: 0px) and (max-width: 767px) {
-    .swiper-electronics {
-      padding-left: 16px; }
-      .swiper-electronics::before {
-        content: '';
-        display: block;
-        position: absolute;
-        height: 170px;
-        width: 24px;
-        right: 0px;
-        z-index: 2;
-        background: linear-gradient(270deg, #f8f8f8 16.84%, rgba(248, 248, 248, 0.0001) 100%); }
-      .swiper-electronics::after {
-        content: '';
-        display: block;
-        position: absolute;
-        height: 170px;
-        width: 24px;
-        left: 0px;
-        z-index: 2;
-        background: linear-gradient(270deg, #f8f8f8 16.84%, rgba(248, 248, 248, 0.0001) 100%); } }
+    .swiper-electronics::before {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 170px;
+      width: 24px;
+      right: 0px;
+      z-index: 2;
+      background: linear-gradient(270deg, #f8f8f8 16.84%, rgba(248, 248, 248, 0.0001) 100%); }
+    .swiper-electronics::after {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 170px;
+      width: 24px;
+      left: 0px;
+      z-index: 2;
+      background: linear-gradient(270deg, #f8f8f8 16.84%, rgba(248, 248, 248, 0.0001) 100%); } }
   @media (min-width: 768px) {
     .swiper-electronics {
       height: 184px;

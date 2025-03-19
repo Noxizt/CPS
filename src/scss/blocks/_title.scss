@@ -24,7 +24,7 @@
   &-repair {
     gap: 32px;
     display: none;
-    @media (min-width: 1120px) {
+    @media (min-width: 1440px) {
       display: flex;
     }
     &__link {
@@ -36,22 +36,20 @@
       color: #1b1c21;
       font-family: 'TT Lakes';
       text-decoration: none;
+      transition: 0.33s;
       &:hover {
-        outline: 1px solid lightpink;
-        background-color: white;
+        opacity: 0.8;
+        transform: scale(0.9);
       }
     }
   }
 }
 
 @media (min-width: 768px) {
-.title-and-repair-wrap {
-
-  margin-bottom: 32px;
+  .title-and-repair-wrap {
+    margin-bottom: 32px;
+  }
 }
-}
-
-
 
 .title-and-repair-wrap {
   padding: 42px 32px 0 0;

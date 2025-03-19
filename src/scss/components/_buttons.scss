@@ -1,16 +1,13 @@
 .btn {
-  // GLOBAL BUTTON STYLES
   &-round {
-    border: transparent;
-    background-color: transparent;
     width: 40px;
     height: 40px;
+    border-radius: 50%;
     border: transparent;
-    background-color: transparent;
-    transition: 1s;
+    transition: 0.33s;
     &:hover {
-      scale: 1.1; /* transform: scale(110%); */
-      opacity: 0.5;
+      opacity: 0.8;
+      transform: scale(0.9);
     }
   }
   &-ellipse {
@@ -22,6 +19,9 @@
     background-image: url('../img/burger.svg');
     &-close {
       background-image: url('../img/cross.svg');
+      @media (min-width: 1440px) {
+        display: none;
+      }
     }
   }
   &-call {
@@ -29,20 +29,18 @@
     &-close {
       background-image: url('../img/cross.svg');
     }
-    &-send {
-      &-inner {
-      }
-    }
+  }
+  &-side-call {
+    background-image: url('../img/call.svg');
   }
   &-message {
     background-image: url('../img/chat.svg');
     &-close {
       background-image: url('../img/cross.svg');
     }
-    &-send {
-      &-inner {
-      }
-    }
+  }
+  &-side-message {
+    background-image: url('../img/chat.svg');
   }
   &-checkstatus {
     background-image: url('../img/checkstatus.svg');
@@ -56,10 +54,6 @@
   &-search {
     background-image: url('../img/search.svg');
   }
-  &-expand {
-    background-image: url('../img/expand.svg');
-  }
-
   &-lang {
     color: #1b1c21;
     font-family: 'TT Lakes';
@@ -71,39 +65,16 @@
     border: none;
     background-color: transparent;
     outline: none;
-    &:focus {
-      color: #7e7e82;
+    transition: 0.33s;
+    &:hover {
+      opacity: 0.8;
+      transform: scale(0.9);
     }
   }
 }
 
-.btn-readmore {
-  height: 24px;
-  padding: 0 0 0 16px;
-  border: transparent;
-  background-color: transparent;
-  /* text style */
-  font-family: 'TTLakes-Medium';
-  font-size: 16px;
-  font-style: normal;
-  line-height: 24px;
-  letter-spacing: -0.2px;
-  display: flex;
-  gap: 8px;
-  &:hover {
-    background-color: lightseagreen;
-  }
-  @media (min-width: 768px) {
-    padding-left: 25px;
-  }
-  @media (min-width: 1120px) {
-    padding-left: 33px;
-  }
-}
-
-.button-expand {
-  height: 24px;
-  margin-left: 24px;
+.btn-expand-readmore {
+  // margin-left: 24px;
   border: transparent;
   background-color: transparent;
   display: flex;
@@ -115,38 +86,124 @@
   font-weight: 500;
   line-height: 24px;
   letter-spacing: -0.2px;
-  transition: 1s;
+  transition: 0.33s;
   &:hover {
-    opacity: 0.5; /* transform: scale(125%); */
+    opacity: 0.8;
+    transform: scale(0.9);
   }
-  @media (min-width: 320px) and (max-width: 767px) {
-    display: none;
+  &__icon {
+    height: 24px;
+    width: 24px;
+    background-image: url('../img/expand.svg');
   }
-  @media (min-width: 768px) and (max-width: 1119px) {
+  &__inner {
+  }
+  @media (min-width: 768px) {
+    margin-left: 24px;
+  }
+  @media (min-width: 1440px) {
     margin-left: 32px;
   }
 }
 
-.btn-conditions {
+.btn-expand-brands {
+  // margin-left: 24px;
+  border: transparent;
+  background-color: transparent;
+  display: flex;
+  gap: 8px;
+  color: #1b1c21;
+  font-family: 'TT Lakes';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  transition: 0.33s;
+  &:hover {
+    opacity: 0.8;
+    transform: scale(0.9);
+  }
+  &__icon {
+    height: 24px;
+    width: 24px;
+    background-image: url('../img/expand.svg');
+  }
+  &__inner {
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    display: none;
+  }
+  @media (min-width: 768px) {
+    margin-left: 24px;
+  }
+  @media (min-width: 1440px) {
+    margin-left: 32px;
+  }
+}
+
+.btn-expand-electronics {
+  // margin-left: 24px;
+  border: transparent;
+  background-color: transparent;
+  display: flex;
+  gap: 8px;
+  color: #1b1c21;
+  font-family: 'TT Lakes';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  transition: 0.33s;
+  &:hover {
+    opacity: 0.8;
+    transform: scale(0.9);
+  }
+  &__icon {
+    height: 24px;
+    width: 24px;
+    background-image: url('../img/expand.svg');
+  }
+  &__inner {
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    display: none;
+  }
+  @media (min-width: 768px) {
+    margin-left: 24px;
+  }
+  @media (min-width: 1440px) {
+    margin-left: 32px;
+  }
+}
+
+// <button class="side-call__button">
+//             ОТПРАВИТЬ
+//             <span class="side-call__icon side-call__icon--dropdown"></span>
+//           </button>
+
+.btn-offer {
+  max-width: 192px;
   display: block;
   position: relative;
   font-weight: 600;
   line-height: 24px;
   letter-spacing: -0.2px;
-  transition: all 0.4s;
-  max-width: 192px;
-  filter: drop-shadow(1px 1px 3px #b5b6bc);
+  transition: 0.33s;
   @media (min-width: 768px) {
     font-size: 16px;
     max-width: 316px;
   }
   &:hover {
     color: #7e7e82;
+    opacity: 0.8;
+    transform: scale(0.9);
   }
   &:active {
     color: #7e7e82;
   }
-  &__arrow-image {
+  &__icon {
     display: block;
     width: 24px;
     height: 27.49px;
@@ -180,10 +237,10 @@
     justify-content: space-around;
     font-weight: 600;
     align-self: flex-end;
-    transition: 0.5s;
+    transition: 0.33s;
     &:hover {
-      opacity: 0.5;
-      scale: 0.97;
+      opacity: 0.8;
+      transform: scale(0.9);
     }
   }
   &__icon {
@@ -193,10 +250,10 @@
     border-radius: 50%;
     // background: url(../img/cross.svg) no-repeat 50% 50%;
     // background-color: #ff3e79;
-    transition: 0.5s;
+    transition: 0.33s;
     &__icon:hover {
-      opacity: 0.5;
-      scale: 0.97;
+      opacity: 0.8;
+      transform: scale(0.9);
     }
   }
   &__icon--dropdown {
@@ -220,11 +277,11 @@
   align-items: center;
   justify-content: space-around;
   font-weight: 600;
-  align-self: flex-end;
-  transition: 0.5s;
+  // align-self: flex-end;
+  transition: 0.33s;
   &:hover {
-    opacity: 0.5;
-    scale: 0.97;
+    opacity: 0.8;
+    transform: scale(0.9);
   }
   &__icon {
     height: 24px;
@@ -233,10 +290,10 @@
     border: transparent;
     border-radius: 50%;
     // background-color: #ff3e79;
-    transition: 0.5s;
+    transition: 0.33s;
     &__icon:hover {
-      opacity: 0.5;
-      scale: 0.97;
+      opacity: 0.8;
+      transform: scale(0.9);
     }
   }
 }

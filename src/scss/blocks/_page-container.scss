@@ -1,33 +1,15 @@
 .page-container {
-  background-color: #f8f8f8;
-
-  @media (min-width: 0px) and (max-width: 767px) {
-    // display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 768px;
-    min-width: 320px;
-    position: relative;
-    // overflow: hidden;
-  }
-
-  @media (min-width: 767px) and (max-width: 1439px) {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1439px;
+    background-color: #f8f8f8;
     min-height: 100%;
-    position: relative;
-    // overflow: hidden;
-  }
-
-  @media (min-width: 1440px) {
-
-    margin: auto auto;
-    max-width: 1440px;
-    min-height: 100%;
-    position: relative;
-    // overflow: hidden;
-    padding-left: 320px;
-  }
+	display: flex;
+	flex-direction: column;
+	max-width: 1440px;
+	margin: 0 auto;
+	position: relative;
+	// overflow: hidden;
+    
+    @media (min-width: 1440px) {
+        padding-left: 320px;
+    }
 }
+

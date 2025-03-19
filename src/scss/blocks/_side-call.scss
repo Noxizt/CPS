@@ -15,7 +15,7 @@
     position: fixed;
     top: 0px;
     z-index: 10;
-    // transition: all 1s;
+
 
     display: block;
     right: -550px;
@@ -28,11 +28,8 @@
     top: 0vh;
     right: -550px;
     z-index: 10;
-    // transition: all 1s;
   }
   
-  
-
   &__icon--close {
     margin-bottom: 40px;
   }
@@ -62,8 +59,6 @@
     border-bottom-right-radius: 4px;
     margin-top: -10px;
   }
-
-  
 
   @media (min-width: 767px) and (max-width: 1439px) {
     &__icon--close {
@@ -98,8 +93,6 @@
       border-bottom-right-radius: 4px;
       margin-top: -10px;
     }
-
-    
   }
 
   @media (min-width: 1440px) {

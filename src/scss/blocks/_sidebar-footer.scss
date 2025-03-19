@@ -1,9 +1,14 @@
 .sidebar-footer {
-  padding: 0 0 32px 24px;
+  padding: 32px 0 32px 24px;
   display: flex;
   flex-direction: column;
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  @media (min-width: 768px) {
+    padding-top: 268px;
+  }
+  @media (min-width: 1440px) {
+    padding-top: 241px;
+  }
   &__buttons {
     margin-bottom: 16px;
     display: flex;
@@ -19,11 +24,10 @@
     line-height: 24px; /* 150% */
     letter-spacing: -0.2px;
     text-decoration: none;
-    transition: 1s;
+    transition: 0.33s;
     &:hover {
-      transition: 1s;
-      font-size: 2em;
-      color: #ff3e79;
+      opacity: 0.8;
+      transform: scale(0.9);
     }
   }
   &__tel {
@@ -36,11 +40,10 @@
     line-height: 32px; /* 133.333% */
     letter-spacing: -0.6px;
     text-decoration: none;
-    transition: 1s;
+    transition: 0.33s;
     &:hover {
-      transition: 1s;
-      font-size: 2em;
-      color: #ff3e79;
+      opacity: 0.8;
+      transform: scale(0.9);
     }
   }
   &__lang {

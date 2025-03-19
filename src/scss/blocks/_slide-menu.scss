@@ -4,7 +4,12 @@
   list-style-type: none;
   display: flex;
   flex-shrink: 0;
-  overflow: hidden;
+  overflow-y: hidden;
+  -ms-overflow-style: none; /* Microsoft IE; Edge */
+	scrollbar-width: none; /* Mozilla Firefox */
+	&::-webkit-scrollbar {
+		display: none; /* Google Chrome, Safari, Opera */
+	}
 
   @media (min-width: 768px) {
     padding-left: 24px;

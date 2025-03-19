@@ -38,26 +38,40 @@
 }
 
 .swiper {
-  &::after {
-    content: '';
-    display: block;
-    position: absolute;
-    height: 81px;
-    width: 24px;
-    top: -5px;
-    right: 0;
-    z-index: 9;
-    background: linear-gradient(
-      270deg,
-      #f8f8f8 16.84%,
-      rgba(248, 248, 248, 0.0001) 100%
-    );
-  }
+  
   &-brands {
     height: 154px;
-    @media (min-width: 768px) and (max-width: 1119px) {
+    @media (min-width:0px) and (max-width:767px) {
+      padding-left: 16px;
+  
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 80px;
+        width: 24px;
+        right: 0px;
+        z-index: 2;
+        background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+      }
+  
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 80px;
+        width: 24px;
+        left: 0px;
+        z-index: 2;
+        background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+      }
+    }
+    @media (min-width: 768px) {
       height: 184px;
       margin-bottom: 24px;
+    }
+    @media (min-width: 1120px) {
+      height: 184px;
     }
   }
 
@@ -66,6 +80,7 @@
     width: 100%;
     padding: 16px 0 0 16px;
     column-gap: 16px;
+    
     &-brands {
       height: calc(16px+72px+16px+12px+38px);
     }
@@ -131,6 +146,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
   @media (min-width: 768px) and (max-width: 1119px) {
     width: 224px;
   }

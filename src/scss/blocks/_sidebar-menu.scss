@@ -2,9 +2,12 @@
   padding: 34px 0 0 24px;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 24px; // S
+  @media (min-width: 768px) {
+    gap: 32px; // S
+  }
   &__link {
-    padding: 16px 0;
+    // padding: 16px 0;
     color: #1b1c21;
     font-family: 'TT Lakes';
     font-size: 16px;

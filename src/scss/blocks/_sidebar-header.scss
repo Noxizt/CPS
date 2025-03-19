@@ -4,4 +4,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16.73px
+  }
 }

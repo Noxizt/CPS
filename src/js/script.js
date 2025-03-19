@@ -1,127 +1,128 @@
 // Инициализация Свайпера
 
-// const swiper = new Swiper('.swiper', {
-//   loop: true,
-//   slidesPerView: 'auto',
-//   // autoplay: {
-//   //   delay: 4000,
-//   //   stopOnLastSlide: true,
-//   //   disableOnInteraction: false
-//   // },
-//   pagination: {
-//     el: '.swiper-pagination',
-//     clickable: true
-//   },
-//   breakpoints: {
-//     0: {
-//       // при ширине экрана 0px и выше:
-//       enabled: true, // включение свайпера
-//       autoHeight: true // автоматическая высота swiper-wrapper от высоты слайда (обратить внимание на зависимость параметров swiper-wrapper от swiper)
-//     },
-//     768: {
-//       enabled: false,
-//       autoHeight: true
-//     }
-//   }
-// })
+const swiper = new Swiper('.swiper', {
+  loop: true,
+  slidesPerView: 'auto',
+  // autoplay: {
+  //   delay: 4000,
+  //   stopOnLastSlide: true,
+  //   disableOnInteraction: false
+  // },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+  breakpoints: {
+    0: {
+      // при ширине экрана 0px и выше:
+      enabled: true, // включение свайпера
+      autoHeight: true // автоматическая высота swiper-wrapper от высоты слайда (обратить внимание на зависимость параметров swiper-wrapper от swiper)
+    },
+    768: {
+      enabled: false,
+      autoHeight: true
+    }
+  }
+})
 
 //Swiper
 
-if (window.innerWidth < 768) {
-  var swiperBrands = new Swiper('.swiper-brands', {
-    loop: true,
-    slidesPerView: 'auto',
-    // autoplay: {
-    //   delay: 4000,
-    //   stopOnLastSlide: true,
-    //   disableOnInteraction: false
-    // },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true
-    },
-    breakpoints: {
-      0: {
-        // при ширине экрана 0px и выше:
-        enabled: true, // включение свайпера
-        autoHeight: true // автоматическая высота swiper-wrapper от высоты слайда (обратить внимание на зависимость параметров swiper-wrapper от swiper)
-      },
-      768: {
-        enabled: false,
-        autoHeight: true
-      }
-    }
-  })
+// if (window.innerWidth < 768) {
+//   var swiperBrands = new Swiper('.swiper-brands', {
+//     loop: true,
+//     slidesPerView: 'auto',
+//     // autoplay: {
+//     //   delay: 4000,
+//     //   stopOnLastSlide: true,
+//     //   disableOnInteraction: false
+//     // },
+//     pagination: {
+//       el: '.swiper-pagination',
+//       clickable: true
+//     },
+//     breakpoints: {
+//       0: {
+//         // при ширине экрана 0px и выше:
+//         enabled: true, // включение свайпера
+//         autoHeight: true // автоматическая высота swiper-wrapper от высоты слайда (обратить внимание на зависимость параметров swiper-wrapper от swiper)
+//       },
+//       768: {
+//         enabled: false,
+//         autoHeight: true
+//       }
+//     }
+//   })
 
-  var swiperElectronics = new Swiper('.swiper-electronics', {
-    loop: true,
-    slidesPerView: 'auto',
-    // autoplay: {
-    //   delay: 4000,
-    //   stopOnLastSlide: true,
-    //   disableOnInteraction: false
-    // },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true
-    },
-    breakpoints: {
-      0: {
-        // при ширине экрана 0px и выше:
-        enabled: true, // включение свайпера
-        autoHeight: true // автоматическая высота swiper-wrapper от высоты слайда (обратить внимание на зависимость параметров swiper-wrapper от swiper)
-      },
-      768: {
-        enabled: false,
-        autoHeight: true
-      }
-    }
-  })
+//   var swiperElectronics = new Swiper('.swiper-electronics', {
+//     loop: true,
+//     slidesPerView: 'auto',
+//     // autoplay: {
+//     //   delay: 4000,
+//     //   stopOnLastSlide: true,
+//     //   disableOnInteraction: false
+//     // },
+//     pagination: {
+//       el: '.swiper-pagination',
+//       clickable: true
+//     },
+//     breakpoints: {
+//       0: {
+//         // при ширине экрана 0px и выше:
+//         enabled: true, // включение свайпера
+//         autoHeight: true // автоматическая высота swiper-wrapper от высоты слайда (обратить внимание на зависимость параметров swiper-wrapper от swiper)
+//       },
+//       768: {
+//         enabled: false,
+//         autoHeight: true
+//       }
+//     }
+//   })
 
-  var swiperPrices = new Swiper('.swiper-prices', {
-    loop: true,
-    slidesPerView: 'auto',
-    // autoplay: {
-    //   delay: 4000,
-    //   stopOnLastSlide: true,
-    //   disableOnInteraction: false
-    // },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true
-    },
-    breakpoints: {
-      0: {
-        // при ширине экрана 0px и выше:
-        enabled: true, // включение свайпера
-        autoHeight: true // автоматическая высота swiper-wrapper от высоты слайда (обратить внимание на зависимость параметров swiper-wrapper от swiper)
-      },
-      768: {
-        enabled: false,
-        autoHeight: true
-      }
-    }
-  })
-}
+//   var swiperPrices = new Swiper('.swiper-prices', {
+//     loop: true,
+//     slidesPerView: 'auto',
+//     // autoplay: {
+//     //   delay: 4000,
+//     //   stopOnLastSlide: true,
+//     //   disableOnInteraction: false
+//     // },
+//     pagination: {
+//       el: '.swiper-pagination',
+//       clickable: true
+//     },
+//     breakpoints: {
+//       0: {
+//         // при ширине экрана 0px и выше:
+//         enabled: true, // включение свайпера
+//         autoHeight: true // автоматическая высота swiper-wrapper от высоты слайда (обратить внимание на зависимость параметров swiper-wrapper от swiper)
+//       },
+//       768: {
+//         enabled: false,
+//         autoHeight: true
+//       }
+//     }
+//   })
+// }
 
 // Свайпер при ресайзе
-window.addEventListener('resize', function () {
-  if (window.innerWidth < 768) {
-    // swiper.updateAutoHeight(1);
-    swiperBrands.enable()
-    swiperElectronics.enable()
-    swiperPrices.enable()
-  }
-  if (window.innerWidth > 767) {
-    swiperBrands.realIndex = 0 // устанавка активного слайда по индексу
-    swiperElectronics.realIndex = 0
-    swiperPrices.realIndex = 0
-    swiperBrands.disable()
-    swiperElectronics.disable()
-    swiperPrices.disable()
-    // swiper.updateAutoHeight(1)
-  }
-})
+
+// window.addEventListener('resize', function () {
+//   if (window.innerWidth < 768) {
+//     // swiper.updateAutoHeight(1);
+//     swiperBrands.enable()
+//     swiperElectronics.enable()
+//     swiperPrices.enable()
+//   }
+//   if (window.innerWidth > 767) {
+//     swiperBrands.realIndex = 0 // устанавка активного слайда по индексу
+//     swiperElectronics.realIndex = 0
+//     swiperPrices.realIndex = 0
+//     swiperBrands.disable()
+//     swiperElectronics.disable()
+//     swiperPrices.disable()
+//     // swiper.updateAutoHeight(1)
+//   }
+// })
 
 const btnBurger = document.querySelector('.btn-burger')
 const btnBurgerClose = document.querySelector('.btn-burger-close')

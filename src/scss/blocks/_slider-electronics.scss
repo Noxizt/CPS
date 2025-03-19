@@ -42,8 +42,6 @@
   &-electronics {
     height: 228px;
     @media (min-width: 0px) and (max-width: 767px) {
-      padding-left: 16px;
-
       &::before {
         content: '';
         display: block;
@@ -58,7 +56,6 @@
           rgba(248, 248, 248, 0.0001) 100%
         );
       }
-
       &::after {
         content: '';
         display: block;

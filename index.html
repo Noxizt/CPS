@@ -26,42 +26,44 @@
       </div>
     </header>
 
-    <div class="content-container">
-      <aside class="sidebar">
-        <div class="sidebar-header">
-          <div class="sidebar-header-wrapper">
-            <button class="btn-round btn-burger-close" title="Закрыть"></button>
-            <a class="sidebar-logo" href="#"><img src="img/logo-CPS.svg"></a>
-          </div>
-          <button class="btn-round btn-search" title="Поиск"></button>
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-header-wrapper">
+          <button class="btn-round btn-burger-close" title="Закрыть"></button>
+          <a class="sidebar-logo" href="#"><img src="img/logo-CPS.svg"></a>
         </div>
-        <nav>
-          <ul class="sidebar-menu">
-            <li><a class="sidebar-menu__link" href="#">Ремонт техники</a></li>
-            <li><a class="sidebar-menu__link" href="#">Услуги и сервисы</a></li>
-            <li><a class="sidebar-menu__link" href="#">Корпоративным клиентам</a></li>
-            <li><a class="sidebar-menu__link" href="#">Продавцам техники</a></li>
-            <li><a class="sidebar-menu__link" href="#">Партнерам</a></li>
-            <li><a class="sidebar-menu__link" href="#">Производителям</a></li>
-            <li><a class="sidebar-menu__link" href="#">Наши сервисные центры</a></li>
-            <li><a class="sidebar-menu__link" href="#">Контакты</a></li>
-          </ul>
-        </nav>
-        <footer class="sidebar-footer">
-          <div class="sidebar-footer__buttons">
-            <button class="btn-round btn-call" title="Позвонить"></button>
-            <button class="btn-round btn-message" title="Написать"></button>
-            <button class="btn-round btn-profile" title="Профиль"></button>
-          </div>
-          <a class="sidebar-footer__mail" href="mailto:mail@cps.com">mail@cps.com</a>
-          <a class="sidebar-footer__tel" href="tel:88008908900">8 800 890 8900</a>
-          <div class="sidebar-footer__lang">
-            <button class="btn-lang" title="Переключить на русский язык">RU</button>
-            <button class="btn-lang" title="Переключить на английский язык">EN</button>
-            <button class="btn-lang" title="Переключить на китайский язык">CH</button>
-          </div>
-        </footer>
-      </aside>
+        <button class="btn-round btn-search" title="Поиск"></button>
+      </div>
+      <nav>
+        <ul class="sidebar-menu">
+          <li><a class="sidebar-menu__link" href="#">Ремонт техники</a></li>
+          <li><a class="sidebar-menu__link" href="#">Услуги и сервисы</a></li>
+          <li><a class="sidebar-menu__link" href="#">Корпоративным клиентам</a></li>
+          <li><a class="sidebar-menu__link" href="#">Продавцам техники</a></li>
+          <li><a class="sidebar-menu__link" href="#">Партнерам</a></li>
+          <li><a class="sidebar-menu__link" href="#">Производителям</a></li>
+          <li><a class="sidebar-menu__link" href="#">Наши сервисные центры</a></li>
+          <li><a class="sidebar-menu__link" href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <footer class="sidebar-footer">
+        <div class="sidebar-footer__buttons">
+          <button class="btn-round btn-side-call" title="Позвонить"></button>
+          <button class="btn-round btn-side-message" title="Написать"></button>
+          <button class="btn-round btn-profile" title="Профиль"></button>
+        </div>
+        <a class="sidebar-footer__mail" href="mailto:mail@cps.com">mail@cps.com</a>
+        <a class="sidebar-footer__tel" href="tel:88008908900">8 800 890 8900</a>
+        <div class="sidebar-footer__lang">
+          <button class="btn-lang" title="Переключить на русский язык">RU</button>
+          <button class="btn-lang" title="Переключить на английский язык">EN</button>
+          <button class="btn-lang" title="Переключить на китайский язык">CH</button>
+        </div>
+      </footer>
+    </aside>
+
+
+    <div class="content-container">
 
       <main class="main">
         
@@ -100,9 +102,14 @@
               партнера, что подтверждает большое количество постоянных клиентов.
               Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
               очередь, советуют нас родным и близким.
+              <br>
+              <br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+              aspernatur cumque ex officiis, non culpa cumque eius adipisci voluptatum,
+              quae nobis nesciunt earum?
             </p>
-            <button class="btn-readmore">
-              <div class="ic-expand"></div><span>Читать далее</span>
+            <button class="btn-expand-readmore">
+              <div class="btn-expand-readmore__icon"></div><span class="btn-expand-readmore__inner">Читать далее</span>
             </button>
           </article>
           <picture class="content__image">
@@ -116,6 +123,7 @@
           <header class="slider-brands-header">
             <h2 class="slider-brands-header__name">Ремонт техники различных брендов</h2>
           </header>
+          
           <div class="swiper swiper-brands">
             <ul class="swiper-wrapper swiper-wrapper-brands">
               <li class="swiper-slide swiper-slide-brands">
@@ -436,19 +444,19 @@
             <span class="btn-offer__icon"></span>
           </a>
         </div>
+        <footer class="footer">
+          <div class="footer-info">
+            <p class="footer-info__year">© 2019 CPS</p>
+            <p class="footer-info__text">Разработано командой Apesong</p>
+          </div>
+          <a href="#privacy_policy" class="footer__privacy-policy">Политика конфиденциальности</a>
+          <p class="footer__offer">Информация, размещенная на данной странице, не является публичной
+            офертой</p>
+        </footer>
       </main>
+    </div>
+    
 
-      <footer class="footer">
-        <div class="footer-info">
-          <p class="footer-info__year">© 2019 CPS</p>
-          <p class="footer-info__text">Разработано командой Apesong</p>
-        </div>
-        <a href="#privacy_policy" class="footer__privacy-policy">Политика конфиденциальности</a>
-        <p class="footer__offer">Информация, размещенная на данной странице, не является публичной
-          офертой</p>
-      </footer>
-    </div>  
-  
     <div class="side-message">
       <button class="side-message__icon side-message__icon--close btn-message-close"></button>
       <h2 class="side-message__title">Обратная связь</h2>
@@ -491,6 +499,7 @@
         </div>
       </form>
     </div>
+    <script scr="./js/swiper-bundle.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script type="text/javascript" src="./js/bundle.js"></script></body>
 </html>
